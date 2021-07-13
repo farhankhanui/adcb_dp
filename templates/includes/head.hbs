@@ -1,0 +1,46 @@
+{{!
+<link href="Common/images/favicon.ico" rel="icon" type="image/x-icon" /> }}
+
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="common/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="common/images/favicon-16x16.png">
+{{#is language "en"}}
+<link rel="stylesheet" type="text/css" href="common/css/toolkit-en.css" />
+{{else}}
+<link rel="stylesheet" type="text/css" href="common/css/toolkit-ar.css" />   
+{{/is}}
+<link rel="stylesheet" type="text/css" href="common/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="common/css/utill.css" />
+{{#if hasPage}}
+<link rel="stylesheet" type="text/css" href="{{page_directory}}/main.css">
+{{/if}}
+<title>
+  {{#is language "en"}}
+  {{title_en}}
+  | ADCB Developer Portal
+  {{else}}
+  {{title_ar}}
+  | ADCB Developer Portal
+  {{/is}}
+</title>
+
+{{#is production "true"}}
+  {{#is language "en"}}
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/common.css?v={{version}}" />
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/header-n-footer.css?v={{version}}" />
+  {{else}}
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/common-ar.css?v={{version}}" />
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/header-n-footer-ar.css?v={{version}}" />
+  {{/is}}
+  {{else}}
+  {{#is language "en"}}
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/common.css?v={{version}}" />
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/header-n-footer.css?v={{version}}" />
+  {{else}}
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/common-ar.css?v={{version}}" />
+    <link rel="stylesheet" href="{{filesDirectory}}/css/components/header-n-footer-ar.css?v={{version}}" />
+  {{/is}}
+{{/is}}

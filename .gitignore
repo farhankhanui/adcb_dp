@@ -1,0 +1,16 @@
+node_modules
+.idea
+*.zip
+.git
+.sass-cache
+package-lock.json
+package
+compress-img/
+*.html
+*.html
+ar/common/css/components
+ar/common/css/components/*.css
+en/common/css/components
+en/common/css/components/*.css
+
+.ftpauth

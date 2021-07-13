@@ -1,0 +1,191 @@
+<script type="text/javascript" src="{{filesDirectory}}/js/app.min.js"></script>
+
+
+<!-- Don't remove below js libraries. -->
+<!-- toolkit scripts -->
+
+<script type="text/javascript" src="{{filesDirectory}}/js/jquery-3.3.1.min.js"></script>
+{{#if jsencrypt}}
+<script type="text/javascript" src="{{filesDirectory}}/js/jsencrypt.min.js"></script>
+{{/if}}
+<script type="text/javascript" src="{{filesDirectory}}/js/utill.js"></script>
+{{#if hasPage}}
+<script type="text/javascript" src="{{page_directory}}/main.js"></script>
+{{/if}}
+<!-- Add the below js files to display cookie policy banner -->
+<script type="text/javascript" src="{{filesDirectory}}/CookiePolicyBanner/main.js"></script>
+<script type="text/javascript" src="{{filesDirectory}}/js/utf8.js"></script>
+<script type="text/javascript" src="{{filesDirectory}}/js/base64.js"></script>
+
+<script type="text/javascript" src="{{filesDirectory}}/js/commons.js"></script>
+<script type="text/javascript" src="{{filesDirectory}}/js/toolkit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" crossorigin="anonymous"
+	referrerpolicy="no-referrer"></script>
+<script>
+	// A $( document ).ready() block.
+	jQuery(document).ready(function () {
+
+		var carouselDir = false;
+		if (jQuery("html").attr("lang") == 'ar') {
+			carouselDir = true;
+		}
+
+		jQuery('.js-testimonials-carousel__wrap').owlCarousel({
+			rtl: carouselDir,
+			loop: true,
+			nav: true,
+			navText: ["<div class='o-carousel-button-left icon-next'></div>", "<div class='o-carousel-button icon-next'></div>"],
+			items: 1,
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
+			animateOut: 'fadeOut'
+
+		});
+		var findbePartSlider = jQuery('.be-part-slider');
+		if (findbePartSlider) {
+			var checkSwitch = jQuery('.be-part-slider #checkSwitch');
+			jQuery(checkSwitch).click(function () {
+				if (jQuery(this).is(":checked")) {
+					jQuery(".be-part-slider #partners-slide").hide();
+					jQuery(".be-part-slider #individuals-slide").show();
+				} else {
+					jQuery(".be-part-slider #partners-slide").show();
+					jQuery(".be-part-slider #individuals-slide").hide();
+				}
+
+			});
+
+		}
+
+		jQuery('.support__form input[name="subject"]').on('click', function () {
+			var email = 'apimarketplace@adcb.com'
+			var emailSubject = jQuery(this).val();
+			jQuery('#emailSupport').attr('href', 'mailto:' + email + '?subject=' + emailSubject);
+		})
+
+
+		jQuery("a.nav-lvl02__link").click(function () {
+			var hash = this.hash;
+			if (hash != "" || hash != null)
+				window.location.reload();
+		});
+
+
+
+
+
+
+
+
+
+	});
+
+</script>
+
+
+<!-- Language switcher script copied form ADCB live site  -->
+
+<script>
+	var _loc = window.location.pathname, _location = '';
+
+	if (_loc.indexOf("/en") >= 0) {
+		_location = _loc.replace("/en/", "/ar/");
+
+		if (_loc.indexOf("/about/") >= 0) {
+			var _querystring = window.location.search;
+			if (_querystring != "")
+				_location = _location + _querystring;
+		}
+
+		$(".language-links__link").attr("href", _location);
+		$(".__lang-ar").attr("href", _location);
+		$(".__lang-en").attr("href", _loc);
+
+
+	}
+	if (_loc.indexOf("/ar") >= 0) {
+		_location = _loc.replace("/ar/", "/en/");
+
+		if (_loc.indexOf("/about/") >= 0) {
+			var _querystring = window.location.search;
+			if (_querystring != "")
+				_location = _location + _querystring;
+		}
+
+		$(".language-links__link").attr("href", _location);
+		$(".__lang-ar").attr("href", _loc);
+		$(".__lang-en").attr("href", _location);
+	}
+	var _el = document.getElementById("_switchLang");
+	if (_el) {
+		_el.href = _location;
+		var _adcbLogo = document.getElementById("_logoHome");
+		var _adcbFooterlogo = document.getElementById("_logoFooter");
+
+		if (_loc.indexOf("/en") >= 0) {
+			if (_loc.indexOf("islamic/") >= 0) {
+				if (_loc.indexOf("/islamic/personal/") >= 0) {
+					_adcbLogo.href = "/en/islamic/personal";
+					_adcbFooterlogo.href = "/en/islamic/personal";
+				} else if (_loc.indexOf("/islamic/business/") >= 0) {
+					_adcbLogo.href = "/en/islamic/business";
+					_adcbFooterlogo.href = "/en/islamic/business";
+				} else {
+					_adcbLogo.href = "/en/islamic/personal";
+					_adcbFooterlogo.href = "/en/islamic/personal";
+				}
+			} else if (_loc.indexOf("business/") >= 0) {
+				_adcbLogo.href = "/en/business/";
+				_adcbFooterlogo.href = "/en/business/";
+			} else if (_loc.indexOf("private/") >= 0) {
+				_adcbLogo.href = "/en/private/";
+				_adcbFooterlogo.href = "/en/private/";
+			}
+			else if (_loc.indexOf("about/") >= 0) {
+				_adcbLogo.href = "/en/personal/";
+				_adcbFooterlogo.href = "/en/personal/";
+			} else if (_loc.indexOf("unb/") >= 0) {
+				_adcbLogo.href = "/en/unb/";
+				_adcbFooterlogo.href = "/en/unb/";
+			} else {
+				_adcbLogo.href = "/en/";
+				_adcbFooterlogo.href = "/en/";
+			}
+		}
+		if (_loc.indexOf("/ar") >= 0) {
+			if (_loc.indexOf("islamic/") >= 0) {
+
+				if (_loc.indexOf("/islamic/personal/") >= 0) {
+					_adcbLogo.href = "/ar/islamic/personal";
+					_adcbFooterlogo.href = "/ar/islamic/personal";
+				} else if (_loc.indexOf("/islamic/business/") >= 0) {
+					_adcbLogo.href = "/ar/islamic/business";
+					_adcbFooterlogo.href = "/ar/islamic/business";
+				} else {
+					_adcbLogo.href = "/ar/islamic/";
+					_adcbFooterlogo.href = "/ar/islamic/";
+				}
+			} else if (_loc.indexOf("business/") >= 0) {
+				_adcbLogo.href = "/ar/business/";
+				_adcbFooterlogo.href = "/ar/business/";
+			} else if (_loc.indexOf("private/") >= 0) {
+				_adcbLogo.href = "/ar/private/";
+				_adcbFooterlogo.href = "/ar/private/";
+			} else if (_loc.indexOf("about/") >= 0) {
+				_adcbLogo.href = "/ar/personal/";
+				_adcbFooterlogo.href = "/ar/personal/";
+			} else if (_loc.indexOf("unb/") >= 0) {
+				_adcbLogo.href = "/ar/unb/";
+				_adcbFooterlogo.href = "/ar/unb/";
+			} else {
+				_adcbLogo.href = "/ar/";
+				_adcbFooterlogo.href = "/ar/";
+			}
+		}
+	}
+</script>
+
+
+<!-- Language switcher script copied form ADCB live site  -->

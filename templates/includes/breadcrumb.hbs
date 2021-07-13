@@ -1,0 +1,42 @@
+<div class="c-breadcrumbs">
+    <div class="container">
+        <ul class="c-breadcrumbs__list">
+            <li class="c-breadcrumbs__item">
+                <a class="c-breadcrumbs__link icon-arrow-down" href="index.html">
+                    {{#is language "en"}}
+                    <span class="visible-xs-inline-block">Back to&nbsp;&nbsp;"</span>Home<span class="visible-xs-inline-block visible-sm-inline-block">"</span>
+                    {{else}}
+                    <span class="visible-xs-inline-block">
+                        العودة إلى
+                        &nbsp;&nbsp;"</span>الرئيسية<span class="visible-xs-inline-block visible-sm-inline-block">"</span>
+                    {{/is}}
+
+   
+                </a>
+            </li>
+            {{#if breadcumb1Has}}
+            <li class="c-breadcrumbs__item">
+                <a class="c-breadcrumbs__link icon-arrow-down" href="{{breadcumb1Link}}">
+                    {{#is language "en"}}
+                        {{breadcumb1Text}}
+                    {{else}}
+                        {{breadcumb1Text-ar}}
+                    {{/is}}
+
+                </a>
+            </li>
+            {{/if}}
+            {{#if breadcumb2Has}}
+            <li class="c-breadcrumbs__item">
+                <a class="c-breadcrumbs__link icon-arrow-down" href="{{breadcumb2Link}}">
+                    {{#is language "en"}}
+                        {{breadcumb2Text}}
+                    {{else}}
+                        {{breadcumb2Text-ar}}
+                    {{/is}}
+                </a>
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

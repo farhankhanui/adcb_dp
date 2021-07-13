@@ -1,0 +1,101 @@
+---
+title_en: User Activation Page
+title_ar: User Activation Page
+hasPage: true
+noBreadCrumbs: true
+page_directory: accountSetup
+jsencrypt: true
+---
+<div class="container container--small">
+    <div class="center" id="ca-logo-name">
+        <!-- Don't change the below class name. As same is using for fetching the logo from themes.-->
+        <p class="page-title-small color-red">
+            {{#is language "en"}}
+            ACCOUNT SETUP
+            {{else}}
+            إعداد الحساب
+            {{/is}}
+        </p>
+        <h1 id="provider-name">
+            {{#is language "en"}}
+            Set up your API Marketplace Account
+            {{else}}
+            قم بإعداد حساب سوق واجهات برمجة التطبيقات API
+            {{/is}}
+        </h1>
+    </div>
+    <p class='help-block form-msg global'>Please fill in the form below and agree to the T&Cs to activate your account
+    </p>
+    <!--Don't change the form id value. As same is using in javascript file for submit the form.-->
+    <form id="activation-Form" class="adcb-forms">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <!-- Require field. And don't change the value of name field. -->
+            <input id="firstName" type="text" name="firstName" placeholder="Your first name" required >
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <!-- Require field. And don't change the value of name field. -->
+            <input id="lastName" type="text" name="lastName" placeholder="Your last name" required >
+        </div>
+        <div class="form-group">
+            <label for="userName">Username</label>
+            <!-- Require field. And don't change the value of name field. -->
+            <input type="text" name="userName" id="userName" placeholder="Create your username" required >
+            <p class='help-block validation username'>Username is already taken. Please try another one.</p>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <!-- Require field. And don't change the value of name field. -->
+            <input id="emailField" type="text" name="email" value="" class="clearbottom" placeholder="abc@xyz.com"
+                readonly>
+            <p class="help-block">Email can be changed after registration.</p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <!-- Require field. And don't change the value of name field. -->
+            <input type="password" id="password" name="password" class="clearbottom" placeholder="Create your password"
+                required>
+            <p class="help-block">Password Required
+            <ul id="passwordPolicies" class="help-block"></ul>
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="password"> Confirm Password</label>
+            <input type="password" name="cnfPassword" placeholder="Confirm your password" required>
+        </div>
+        <div class="form-group">
+            <div class="adcb-checkbox">
+                <div class="adcb-checkbox__btn">
+                    <label class="checkboxcontainer">
+                        By ticking this box, I acknowledge that I have read, understood and agree to be bound by the
+                        terms and conditions of both the API Marketplace by ADCB - <a
+                            href="terms-and-condition.html">Terms of Use</a> and the
+                        <a href="privacy-policy.html">Privacy Notice</a>
+                        <input type="checkbox" id="checkbox00" value="true" required=""
+                            class="o-input o-input__text">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <span class="c-input__error">Error message</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p class="help-block global error validation">*Form error will come here as a statement</p>
+        </div>
+        <div class="form-btn-wrapper">
+            <!-- Below button require for submit the form. -->
+            <button type="submit" class="btn btn-primary">Activate Account</button>
+            <button type="button" onclick="window.location.href='/admin/homeRedirect'"
+                class="btn btn--bold">Cancel</button>
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+

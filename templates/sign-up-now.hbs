@@ -1,0 +1,90 @@
+---
+title_en: Sign Up Now
+title_ar: Sign Up Now
+hasPage: true
+page_directory: signUp
+jsencrypt: false
+footer-space-no: true
+breadcumb1Has: true
+breadcumb1Text: Get Started
+breadcumb1Link:
+breadcumb2Has: false
+
+
+---
+
+{{> breadcrumb}}
+
+
+<div class="o-comp c-leads">
+    <div class="c-leads__img-wrapper">
+        <img class="c-leads__img" src="{{images}}/signup-now.jpg">
+    </div>
+    <div class="c-leads__container container">
+        <div class="o-comp c-leads__list ">
+
+            <div class="c-leads__content-desc">
+                <!-- start comp-title -->
+                <h2 class="c-leads__title">Easily Setup Your API Marketplace Account</h2>
+                <!-- end comp-title -->
+                <div class="c-leads__desc">
+                    <h4>Step 1: Sign Up to API Marketplace</h4>
+                    <p>
+                        Once you have completed the sign up form you will receive a confirmation email from ADCB.
+                    </p>
+                    <h4>Step 2: Activation Link</h4>
+                    <p>Once ADCB reviews and accepts your registration request you will be sent an email to your
+                        registered email address with an activation link to setup your account.</p>
+                    <h4>Step 3: Set Up your API Marketplace Account</h4>
+                    <p>Once you have filled in the form and activated your account you will be able to access our API
+                        details.</p>
+                </div>
+            </div>
+            <div class="c-leads__card">
+                <div class="c-leads__content">
+                    <div class="c-leads__wrap">
+                        <h2>Sign up now</h2>
+                        <p>You will need to sign up before you can get full access to our APIs</p>
+
+                        <form id="signUp-Form" class="c-leads__form-signUp">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <!-- Require field. And don't change the value of name field. -->
+                                <input type="text" name="Email" placeholder="e.g. name@email.com" required>
+                                <p class="help-block signup validation">Maximum email length is 254 characters.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="cnfemail">Confirm Email</label>
+                                <!-- Require field. And don't change the value of name field. -->
+                                <input type="text" name="cnfemail" placeholder="e.g. name@email.com" required>
+                                <p class="help-block signup validation">Maximum email length is 254 characters.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="orgName">Organisation Name</label>
+                                <!--Below input is optional. If using this filed than don't change the value of name field. -->
+                                <input type="text" name="OrganizationName" id="organization-name"
+                                    placeholder="Your company">
+                                {{!-- <p class="help-block signup validation">Error message</p> --}}
+                                <p class="help-block validation organization" style="display: none;">Organization name
+                                    is already taken</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="orgDesc">Organisation Website Link</label>
+                                <!--Below input is optional. If using this filed than don't change the value of name field. -->
+                                <input type="text" name="OrganizationDescription" placeholder="Your company's website">
+                                <p class="help-block signup validation">Error message</p>
+                            </div>
+                            <div class="form-group">
+                                <p class="help-block global error validation signUp">*Form error will come here as a
+                                    statement </p>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <button type="submit" class="btn btn-primary fw-btn">Register Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

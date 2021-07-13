@@ -1,0 +1,38 @@
+
+		<div class="mailing-list">
+			<div class="container">
+				<div class="mailing-list__wrap">
+					<h3 class="mailing-list__title">
+						{{#is language "en"}}
+						Join our Mailing List
+						{{else}}
+						انضم لقائمتنا البريدية
+						{{/is}}
+					</h3>
+					<form id="wizard" method="post" class="mailing-list__form" action="PER-PDP1-compaigns_thankyou.html"
+						autocomplete="off" novalidate="novalidate">
+						<div class="c-input-text">
+
+
+
+							{{#is language "en"}}
+							<input name="accountTitle" placeholder="Enter your email ID" type="text"
+								class="o-input o-input__text" required="">
+							{{else}}
+							<input name="accountTitle" placeholder="أدخل البريد الإلكتروني" type="text"
+								class="o-input o-input__text" required="">
+							{{/is}}
+							<span class="c-input__error o-input__error">Error message</span>
+						</div>
+						<button class="o-btn o-btn-medium-red" type="submit">
+
+							{{#is language "en"}}
+							Submit
+							{{else}}
+							تقديم
+							{{/is}}
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>

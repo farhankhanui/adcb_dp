@@ -1,0 +1,86 @@
+label {
+    color: rgb(39, 50, 57);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+    &:not(.checkboxcontainer):not(.c-input__label){
+        opacity: .7; 
+    }
+    
+}
+
+.form-group {
+    margin-bottom: 31px;
+    margin-top: 0;
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+}
+
+form {
+    padding: 67px 94px;
+    .btn {
+        font-size: 19px;
+        padding: 19px 41px;
+        margin: 19px 0 0;
+        &.btn-x250{
+            min-width: 250px;
+        }
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+        &--bold {
+            font-weight: 600;
+            color: rgb(39, 50, 57);
+            font-size: 20px;
+            padding: 18px 40px;
+        }
+        &.fw-btn{
+            width:100%;
+            font-weight: 600;
+
+        }
+        & + .btn {
+            margin-left: 15px;
+
+            @media (max-width: 640px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+input {
+    padding: 15px 20px;
+    height: 50px;
+}
+
+input {
+    & + div,
+    & + p,
+    & + .help-block {
+        margin-top: -2px !important;
+        // margin-bottom: 40px !important;
+        @media (max-width: 767px) {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+input + div:last-child:not(.help-block) {
+    margin: 0 !important;
+}
+
+.reset-password {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    div > .btn:first-child {
+        margin-top: 0;
+    }
+}

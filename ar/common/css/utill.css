@@ -1,0 +1,333 @@
+/* ADCB English font */
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("../fonts/proximanova-light-webfont.ttf");
+  src: /*url("../fonts/proximanova-light-webfont.ttf?#iefix") format('embedded-opentype'),*/url("../fonts/proximanova-light-webfont.woff2") format('woff2'), url("../fonts/proximanova-light-webfont.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("../fonts/proximanova-regular-webfont.ttf");
+  src: /*url("../fonts/proximanova-regular-webfont.ttf?#iefix") format('embedded-opentype'),*/url("../fonts/proximanova-regular-webfont.woff2") format('woff2'), url("../fonts/proximanova-regular-webfont.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("../fonts/proximanova-semibold-webfont.ttf");
+  src: /*url("../fonts/proximanova-semibold-webfont.ttf?#iefix") format('embedded-opentype'),*/url("../fonts/proximanova-semibold-webfont.woff2") format('woff2'), url("../fonts/proximanova-semibold-webfont.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("../fonts/proximanova-medium-webfont.ttf");
+  src: /*url("../fonts/proximanova-medium-webfont.ttf?#iefix") format('embedded-opentype'),*/url("../fonts/proximanova-medium-webfont.woff2") format('woff2'), url("../fonts/proximanova-medium-webfont.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    font-family: "proxima_nova", sans-serif;
+    font-size: 17px;
+    background: #273239;
+    color: rgba(39,50,57,.7);
+    letter-spacing: 0;
+    line-height: 1.4;
+    padding: 0 0 5% 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-center {
+    width: 30%;
+    margin: 10px auto;
+    min-width: 450px;
+}
+
+div {
+    margin: 10px 0 0 0;
+}
+
+.center {
+  background-color: transparent;
+  text-align: center;
+  padding: 60px 0 10px;
+  color: #FFFFFF !important;
+}
+
+h1, h2 {
+  font-size: calc(32px + 18 * ((100vw - 320px) / 1120));
+  font-weight: 500;
+  line-height: 1;
+}
+
+h2 span {
+  background: #F7F7F7;
+  padding: 0 2px;
+}
+
+p {
+    margin-bottom: 1em
+}
+
+a {
+    color: #ec0100;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+td {
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  padding: 1em;
+  border-color: #D8D8D8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+label {
+  color: #273239;
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: text;
+}
+
+.help-block {
+    margin-top: 5px;
+    font-size: 0.75em;
+    color: #20465f;
+}
+
+button {
+  padding: 12px 36px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+.btn {
+    vertical-align: middle;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    border: #d8d8d8 solid 1px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #EC0100;
+    border: 1px solid #EC0100;
+}
+
+.validation {
+    display: none;
+    color: red;
+}
+.spanText, .help-block{
+  color: #ec0100;
+  font-size: 13px;
+  font-weight: 300;
+}
+form{
+  position: relative;
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 48px 48px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 0 0 1rem 0 !important;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    width: 2%;
+}
+
+input+div, input+p {
+  margin: -0.75rem 0 1rem 0 !important;
+}
+
+input+div:last-child {
+  margin: 0 !important;
+}
+
+#provider-name {
+  text-transform: capitalize;
+}
+
+.navigation { 
+  background-color: #ec0100;
+  margin: 0;
+}
+
+.navigation ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  overflow-y: hidden;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.navigation ul li { 
+  display: inline-block; 
+}
+.navigation ul li a { 
+  display: block; 
+  padding: 20px;
+  margin-bottom: 1px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+
+.navigation ul li a:hover { 
+  background-color: #c30000;
+}
+
+.apiList, .head+div {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  max-width: 966px;
+  text-align: center;
+}
+.apiList> div, .head+div .data {
+  margin: 12px;
+  border-radius: 0;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 48px 48px;
+}
+.apiList> div h2,.data h2{
+  font-size: 2rem;
+  color: rgba(39,50,57,1);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.apiList .publicAPI, .apiList .privateAPI {
+  display: block;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 15px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.apiList h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+iframe {
+  margin-right: auto !important;
+  margin-top: 5% !important;
+  margin-left: auto !important;
+}
+
+.cookie-policy-message{
+    left: 10%;
+    width: 80%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.cookie-policy-message.top{
+  top: 0px;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  margin: 0px;
+}
+
+.cookie-policy-message.bottom{
+  bottom: 0px;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.cookie-policy-message.dark{
+  background: rgb(56, 54, 77);
+  color: rgb(255, 255, 255);
+}
+
+.cookie-policy-message.light{
+  background: rgb(255, 255, 255);
+  color: rgb(56, 54, 77); 
+}
+.cookie-policy-close-icon.light{
+    background: #FFFFFF;
+}
+  
+.cookie-policy-close-icon.dark{
+    background: #38364d;
+}
+.cookie-policy-message.hide {
+  display: none;
+}
+.cookie-policy-message-text {
+  margin: 8px 35px 8px 100px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.cookie-policy-title {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  font-family: clear-sans-regular, 'Helvetica Neue', helvetica, arial, verdana,
+    sans-serif;
+}
+
+.cookie-policy-close-btn {
+  margin: 8px 8px 7px 7px;
+  padding: 0;
+  outline: none;
+  border: 0;
+  float: right;
+  width: 20px;
+}
+
+.cookie-policy-close-icon {
+  float: right;
+  cursor: pointer;
+  background: #38364d;
+  border: none;
+}
+
+.cookie-policy-message-info {
+  margin-bottom: 4px;
+  font-family: clear-sans-regular, 'Helvetica Neue', helvetica, arial, verdana,
+    sans-serif;
+}
+
+.cookie-policy-info-icon {
+  float: left;
+  margin: 18px 28px;
+  width: 40px;
+  height: 40px;
+}
+

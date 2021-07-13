@@ -1,0 +1,276 @@
+<!-- start Footer component -->
+<!-- default footer is the white footer -->
+<!-- add t-dark-footer to have the dark footer -->
+<footer
+    class="site-footer t-dark-footer site-footer--modifed {{#if footer-space-no}}no-space{{/if}} {{#if space-top-100}}top-100{{/if}}">
+
+    {{#unless noBreadCrumbs}}
+    {{> breadcrumb}}
+    {{/unless}}
+
+    <div class="c-footer container">
+        <div class="c-footer-brand">
+            <div class="c-footer-brand__logo">
+                <!-- start o-site-logo -->
+                <a href="index.html" class="o-site-logo" data-delay="5" data-anim="false" data-timing=".5"
+                    data-easing="ease-out">
+                    <img src="{{images}}/footer-logo.svg" alt="">
+                </a>
+                <!-- end o-site-logo -->
+            </div>
+            <div class="c-footer-brand__social">
+                <div class="c-footer-brand__social__icon">
+                    <a href="https://www.linkedin.com/">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1">
+                            <g class="social">
+                                <path
+                                    d="M17.963123,10.5237355 L17.963123,17.1648167 L14.1130441,17.1648167 L14.1130441,10.9685151 C14.1130441,9.4119536 13.5561717,8.34966125 12.1625708,8.34966125 C11.0987332,8.34966125 10.4656427,9.06556845 10.187123,9.75808817 C10.0855545,10.0056613 10.0594107,10.3502506 10.0594107,10.6968028 L10.0594107,17.1648167 L6.20803712,17.1648167 C6.20803712,17.1648167 6.25990719,6.67031555 6.20803712,5.58300696 L10.0590348,5.58300696 L10.0590348,7.22468213 C10.0512251,7.23696056 10.0410766,7.25019954 10.0337262,7.26210209 L10.0590348,7.26210209 L10.0590348,7.22468213 C10.5706775,6.43664965 11.4844176,5.31091879 13.529652,5.31091879 C16.0635592,5.31087703 17.963123,6.96625058 17.963123,10.5237355 Z M2.17933643,0 C0.861786543,0 0,0.864208817 0,2.00067285 C0,3.11237123 0.836853828,4.00280742 2.1282181,4.00280742 L2.15394432,4.00280742 C3.4970116,4.00280742 4.33227842,3.11253828 4.33227842,2.00067285 C4.30696984,0.864208817 3.4970116,0 2.17933643,0 Z M0.228737819,17.1648167 L4.07864965,17.1648167 L4.07864965,5.58300696 L0.228737819,5.58300696 L0.228737819,17.1648167 Z"
+                                    id="LinkedIn"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="c-footer-brand__social__icon">
+                    <a href="https://twitter.com/?lang=en">
+                        <svg width="18px" height="18px" viewBox="0 0 18 14">
+                            <g class="social">
+                                <path
+                                    d="M17.9999997,1.74432318 C17.3374998,2.03788195 16.626647,2.23697015 15.8797648,2.32585248 C16.6423823,1.8691761 17.2261469,1.1448233 17.5028233,0.284352887 C16.7874705,0.707264568 15.997853,1.01435274 15.1565002,1.1808233 C14.4827651,0.462088146 13.5244417,0.0144117647 12.4615008,0.0144117647 C10.4222659,0.0144117647 8.76882505,1.66785261 8.76882505,3.70596985 C8.76882505,3.99502862 8.80144269,4.27735209 8.86444268,4.54732263 C5.79603152,4.39320501 3.07517913,2.92311707 1.25415008,0.689264571 C0.935826611,1.23367623 0.754738412,1.86802904 0.754738412,2.54517597 C0.754738412,3.82632277 1.40712063,4.95673431 2.39694397,5.61808712 C1.79179703,5.59785183 1.22265008,5.43138127 0.724385477,5.15467545 L0.724385477,5.20079308 C0.724385477,6.98920449 1.99764993,8.48179243 3.68594371,8.82149824 C3.37662024,8.90473352 3.05044384,8.95085116 2.71300273,8.95085116 C2.4745616,8.95085116 2.24397341,8.92723352 2.01788522,8.88223353 C2.48803218,10.3500862 3.85129662,11.4174977 5.46650218,11.4467624 C4.20335537,12.4365858 2.61064981,13.0248503 0.880738387,13.0248503 C0.582679622,13.0248503 0.289091446,13.0068504 3.26797386e-05,12.9742327 C1.63435588,14.0236737 3.5746202,14.6355559 5.65997273,14.6355559 C12.4525596,14.6355559 16.1655,9.00935115 16.1655,4.13002859 L16.1531177,3.65199927 C16.8785881,3.1345582 17.5062057,2.48444068 17.9999997,1.74432318 Z"
+                                    id="Shape"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="c-footer-brand__social__icon">
+                    <a href="https://www.facebook.com/">
+                        <svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1">
+                            <g class="social">
+                                <path
+                                    d="M9.36525077,0.00374520146 L7.03105396,0 C4.4086639,0 2.71396024,1.73870978 2.71396024,4.42982429 L2.71396024,6.4722699 L0.367029743,6.4722699 C0.164227084,6.4722699 0,6.63668425 0,6.83948691 L0,9.79875784 C0,10.0015605 0.164414344,10.1657876 0.367029743,10.1657876 L2.71396024,10.1657876 L2.71396024,17.6329703 C2.71396024,17.8357729 2.87818732,18 3.08098998,18 L6.1430667,18 C6.34586935,18 6.51009644,17.8355857 6.51009644,17.6329703 L6.51009644,10.1657876 L9.25420555,10.1657876 C9.45700821,10.1657876 9.62123529,10.0015605 9.62123529,9.79875784 L9.62235885,6.83948691 C9.62235885,6.74211167 9.58359602,6.64885615 9.51487157,6.57994445 C9.44614712,6.51103274 9.35251709,6.4722699 9.25514185,6.4722699 L6.51009644,6.4722699 L6.51009644,4.74086327 C6.51009644,3.9086795 6.70840486,3.48622078 7.79245342,3.48622078 L9.36487625,3.485659 C9.56749165,3.485659 9.73171874,3.32124466 9.73171874,3.11862926 L9.73171874,0.370774945 C9.73171874,0.168346806 9.56767891,0.00411972161 9.36525077,0.00374520146 Z"
+                                    id="Shape"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="c-footer-brand__social__icon">
+                    <a href="https://www.instagram.com/">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+                            <g class="social">
+                                <path
+                                    d="M10 2c2.606 0 2.914.01 3.943.057.952.043 1.468.202 1.812.336.456.177.78.388 1.122.73.342.341.553.666.73 1.122.134.344.293.86.336 1.812C17.99 7.086 18 7.394 18 10s-.01 2.914-.057 3.943c-.043.952-.202 1.468-.336 1.812-.177.456-.388.78-.73 1.122a3.023 3.023 0 0 1-1.122.73c-.344.134-.86.293-1.812.336C12.914 17.99 12.606 18 10 18s-2.914-.01-3.943-.057c-.952-.043-1.468-.202-1.812-.336a3.023 3.023 0 0 1-1.122-.73 3.023 3.023 0 0 1-.73-1.122c-.134-.344-.293-.86-.336-1.812C2.01 12.914 2 12.606 2 10s.01-2.914.057-3.943c.043-.952.202-1.468.336-1.812.177-.456.388-.78.73-1.122a3.024 3.024 0 0 1 1.122-.73c.344-.134.86-.293 1.812-.336C7.086 2.01 7.394 2 10 2zm0-2C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.902 4.902 0 0 0-1.772 1.153A4.902 4.902 0 0 0 .525 3.45C.278 4.086.109 4.813.06 5.877.011 6.944 0 7.284 0 10s.011 3.056.06 4.123c.049 1.064.218 1.791.465 2.427a4.902 4.902 0 0 0 1.153 1.772 4.902 4.902 0 0 0 1.772 1.153c.636.247 1.363.416 2.427.465 1.067.049 1.407.06 4.123.06s3.056-.011 4.123-.06c1.064-.049 1.791-.218 2.427-.465a4.902 4.902 0 0 0 1.772-1.153 4.902 4.902 0 0 0 1.153-1.772c.247-.636.416-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.049-1.064-.218-1.791-.465-2.427a4.902 4.902 0 0 0-1.153-1.772A4.902 4.902 0 0 0 16.55.525C15.914.278 15.187.109 14.123.06 13.056.012 12.716 0 10 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                                    id="Shape"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="c-footer__nav">
+            <ul class="nav-lvl01">
+                <li class="nav-lvl01__item o-comp-collapse">
+                    <a class="nav-lvl01__link o-comp-collapse__btn" href="about.html">
+                        {{#is language "en"}}
+                        About
+                        {{else}}
+                        نبذة
+                        {{/is}}
+                    </a>
+                    <!-- start - nav-lvl02 (level 2 navigation) -->
+                    <ul class="nav-lvl02 o-comp-collapse__content">
+                        <li class="nav-lvl02__item">
+                            <a class="nav-lvl02__link" href="about.html#introduction">
+                                {{#is language "en"}}
+                                Introduction
+                                {{else}}
+                                مقدمة
+                                {{/is}}
+                            </a>
+                        </li>
+                        <li class="nav-lvl02__item">
+                            <a class="nav-lvl02__link " href="about.html#feature">
+                                {{#is language "en"}}
+                                Marketplace Benefits
+                                {{else}}
+                                مزايا API Marketplace
+                                {{/is}}
+
+                            </a>
+                        </li>
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="about.html#partners">
+                                {{#is language "en"}}
+                                Partners
+                                {{else}}
+                                شركاؤنا
+                                {{/is}}
+                            </a></li>
+                    </ul>
+                    <!-- end - nav-lvl02 (level 2 navigation) -->
+                </li>
+                <li class="nav-lvl01__item o-comp-collapse">
+                    <a class="nav-lvl01__link o-comp-collapse__btn" href="api-catalogue.html">
+                        {{#is language "en"}}
+                        API Catalogue
+                        {{else}}
+                        كتيّب واجهة برمجة التطبيقات API
+                        {{/is}}
+                    </a>
+                    <!-- start - nav-lvl02 (level 2 navigation) -->
+                    <ul class="nav-lvl02 o-comp-collapse__content">
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="virtual-account-apis.html">
+                                {{#is language "en"}}
+                                Virtual Accounts APIs
+                                {{else}}
+                                واجهة برمجة التطبيقات API للحسابات الافتراضية
+                                {{/is}}
+
+                            </a></li>
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="touchpoints-api.html">
+                                {{#is language "en"}}
+                                TouchPoints APIs
+                                {{else}}
+                                واجهة برمجة التطبيقات API لمكافآت نقاط تاتش بوينتس
+                                {{/is}}
+
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end - nav-lvl02 (level 2 navigation) -->
+                </li>
+                <li class="nav-lvl01__item o-comp-collapse">
+                    <a class="nav-lvl01__link o-comp-collapse__btn" href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html">
+                        {{#is language "en"}}
+                        Get Started
+                        {{else}}
+                        لنبدأ
+                        {{/is}}
+                    </a>
+                    <!-- start - nav-lvl02 (level 2 navigation) -->
+                    <ul class="nav-lvl02 o-comp-collapse__content">
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html">
+                                {{#is language "en"}}
+                                Register
+                                {{else}}
+                                التسجيل
+                                {{/is}}
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end - nav-lvl02 (level 2 navigation) -->
+                </li>
+                <li class="nav-lvl01__item o-comp-collapse">
+                    <a class="nav-lvl01__link o-comp-collapse__btn" href="support.html">
+                        {{#is language "en"}}
+                        Support
+                        {{else}}
+                        الدعم
+                        {{/is}}
+                    </a>
+                    <!-- start - nav-lvl02 (level 2 navigation) -->
+                    <ul class="nav-lvl02 o-comp-collapse__content">
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="support.html">
+                                {{#is language "en"}}
+                                FAQs
+                                {{else}}
+                                الأسئلة الأكثر تكراراً
+                                {{/is}}
+                            </a></li>
+                        <li class="nav-lvl02__item"><a class="nav-lvl02__link " href="contact.html">
+                                {{#is language "en"}}
+                                Contact Us
+                                {{else}}
+                                اتصل بنا
+                                {{/is}}
+                            </a></li>
+                    </ul>
+                    <!-- end - nav-lvl02 (level 2 navigation) -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--
+    <div class="site-footer__switch-language hidden-lg hidden-md hidden-xl">
+      <div class="o-btn-group">
+        <a href="" class="selected o-btn-transparent ">English</a>
+        <a href="" class="lang-ar  o-btn-transparent ">عربي</a>
+      </div>
+    </div>
+  -->
+    <div class="site-footer__links container">
+        <ul class="site-footer__menu-list">
+            <li><a href="terms-and-condition.html">
+                    {{#is language "en"}}
+                    Terms & Conditions
+                    {{else}}
+                    الشروط والأحكام
+                    {{/is}}
+                </a>
+            </li>
+            <li><a href="#">
+                    {{#is language "en"}}
+                    Service Promise
+                    {{else}}
+                    الوفاء بوعود الخدمة
+                    {{/is}}
+                </a></li>
+            <li><a href="#">
+                    {{#is language "en"}}
+                    Security Tips
+                    {{else}}
+                    نصائح أمنية مهمة
+                    {{/is}}
+                </a></li>
+            <li><a href="#">
+                    {{#is language "en"}}
+                    Disclaimer
+                    {{else}}
+                    إخلاء مسؤولية
+                    {{/is}}
+                </a></li>
+            <li><a href="privacy-policy.html">
+                    {{#is language "en"}}
+                    Privacy Notice
+                    {{else}}
+                    إشعار الخصوصية
+                    {{/is}}
+                </a></li>
+            <li><a href="#">
+                    {{#is language "en"}}
+                    Cookies Policy
+                    {{else}}
+                    سياسة ملفات تعريف الارتباط
+                    {{/is}}
+                </a></li>
+            <li><a href="#">
+                    {{#is language "en"}}
+                    USA Patriot Certificate
+                    {{else}}
+                    شهادة قانون باتريوت الأمريكي
+
+                    {{/is}}
+                </a></li>
+        </ul>
+    </div>
+    <div class="site-footer__copyrights container">
+        <div class="copyright-text">
+
+            {{#is language "en"}}
+            Copyright 2021 ADCB. All rights reserved.
+            {{else}}
+            جميع الحقوق محفوظة 2021 © بنك أبوظبي التجاري.
+            {{/is}}
+        </div>
+        <!--    <div class="language-links hidden-xs hidden-sm">-->
+        <div class="language-links">
+            <!--      <a href="../01-english/00-home-premium.html" class="selected">English</a>-->
+            <a class="language-links__link" href="#">
+                {{#is language "en"}}
+                عربي
+                {{else}}
+                English
+                {{/is}}
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- end Footer component -->
+<div id="cookie-policy-message" class="cookie-policy-message hide"></div>

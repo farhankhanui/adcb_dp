@@ -1,0 +1,57 @@
+---
+title_en: Error
+title_ar: Error
+hasPage: false
+noBreadCrumbs: true
+---
+
+
+
+<div class="site-content">
+  <div class="o-comp c-not-found">
+    <div class="o-comp__content container ">
+      <div class="c-not-found__wrapper">
+        <div class="c-not-found__text-content">
+          <h2>
+            {{#is language "en"}}
+            Oops!
+            {{else}}
+            عذراً!
+            {{/is}}
+          </h2>
+          <p>
+            {{#is language "en"}}
+            We're sorry but we can't find the page you are looking for, maybe it's been moved, changed, or removed.
+            {{else}}
+            نعتذر لم يتم العثور على الصفحة التي تبحث عنها، ربما تم نقلها أو تغييرها أو إزالتها.
+            {{/is}}
+          </p>
+          <p>
+            {{#is language "en"}}
+            Please check the address again or try one of the options below to help you find what you are looking for.
+            {{else}}
+            يرجى التحقق من العنوان مرة أخرى أو محاولة أحد الخيارات التالية لمساعدتك في العثور على ما تبحث عنه.
+            {{/is}}
+          </p>
+          <a class="o-link-more icon-arrow-down" href="#">
+            {{#is language "en"}}
+            Go Back to Home
+            {{else}}
+            العودة إلى الصفحة الرئيسية
+            {{/is}}
+          </a>
+          <a class="o-link-more icon-arrow-down" href="#">
+            {{#is language "en"}}
+            Support & FAQs
+            {{else}}
+            الدعم والأسئلة الأكثر تكراراً
+            {{/is}}
+          </a>
+        </div>
+        <div class="c-not-found__img-wrapper">
+          <img class="c-not-found__img" src="{{images}}/01-not-found.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
