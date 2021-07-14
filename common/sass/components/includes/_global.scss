@@ -8,6 +8,18 @@ h2 {
   font-size: 40px;
 }
 
+P{
+  a{
+    font-size: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    &:hover{
+      text-decoration: underline;
+      color: #ec0100;
+    }
+  }
+}
+
 .site-wrap {
   margin: 0;
 
