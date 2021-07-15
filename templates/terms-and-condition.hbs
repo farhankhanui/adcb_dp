@@ -15,8 +15,21 @@ hasPage: false
 <div class="container">
     <div class="center" id="ca-logo-name">
         <!-- Don't change the below class name. As same is using for fetching the logo from themes.-->
-        <p class="page-title-small color-red">API Marketplace</p>
-        <h1 id="provider-name">Terms and Conditions</h1>
+        <p class="page-title-small color-red">
+            {{#is language "en"}}
+            API MARKETPLACE
+            {{else}}
+            منصة واجهة برمجة التطبيقات API Marketplace
+            {{/is}}
+        </p>
+        <h1 id="provider-name">
+            {{#is language "en"}}
+            Terms and Conditions
+            {{else}}
+            الشروط والأحكام
+            {{/is}}
+
+        </h1>
     </div>
 </div>
 
@@ -27,37 +40,71 @@ hasPage: false
         <div class="accordion-item js-acc-item" data-index="0" data-state="expanded">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
                 <span>
+                    {{#is language "en"}}
                     1. Terms of the ADCB API Marketplace
+                    {{else}}
+                    1. أحكام منصة واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                    {{/is}}
                 </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
                     <p>
+                        {{#is language "en"}}
                         These terms apply to your access and use of the ADCB application programming interface ("API")
                         Marketplace. In these terms where we use "ADCB", "we", "our" or "us" means the Abu Dhabi
                         Commercial Bank Group of companies with whom you are contracting.
-                    </p>
-                    <p>
-                        In addition to these terms, we have other policies that apply to you when you use the ADCB API
-                        Marketplace, including our '<a href="privacy-policy.html">Privacy Notice</a>’ and any additional
-                        terms, policies, instructions and standards that may apply to your use of the ADCB API
-                        Marketplace (“Terms”).
-                    </p>
-                    <p>
-                        By registering to access the ADCB API Marketplace and by clicking the check box you the person
-                        entering these Terms (“you” or “your”) acknowledge that you have read, understood and accepted
-                        the Terms and you agree to comply with them.
-                    </p>
-                    <p>
-                        If you are accessing and using the ADCB API Marketplace on behalf of a corporate entity, you
-                        represent and warrant that you are authorised to bind that entity to these Terms and you agree
-                        to these Terms on behalf of the corporate entity which employs you or which you represent.
+                        {{else}}
+                        تنطبق هذه الأحكام على دخولك واستخدامك لواجهة برمجة التطبيقات API Marketplace من بنك أبوظبي
+                        التجاري ("الواجهة"). في هذه الأحكام تشير عبارات "البنك" أو "نحن" أو "إننا" أو "لنا" إلى مجموعة
+                        شركات بنك أبوظبي التجاري التي تتعاقد معها.
+                        {{/is}}
 
                     </p>
                     <p>
+                        {{#is language "en"}}
+                        In addition to these terms, we have other policies that apply to you when you use the ADCB API
+                        Marketplace, including our '<a href="privacy-notice.html">Privacy Notice</a>’ and any additional
+                        terms, policies, instructions and standards that may apply to your use of the ADCB API
+                        Marketplace (“Terms”).
+                        {{else}}
+                        بالإضافة إلى هذه الأحكام، لدينا سياسات أخرى تنطبق عليك عند استخدام منصة واجهة برمجة التطبيقات
+                        API Marketplace من بنك أبوظبي التجاري، بما في ذلك
+                        <a href="privacy-notice.html">سياسة الخصوصية</a>
+                        {{/is}}
+                    </p>
+                    <p>
+                        {{#is language "en"}}
+                        By registering to access the ADCB API Marketplace and by clicking the check box you the person
+                        entering these Terms (“you” or “your”) acknowledge that you have read, understood and accepted
+                        the Terms and you agree to comply with them.
+                        {{else}}
+                        بتسجيلك للدخول إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري وبالنقر على خانة
+                        الاختيار، فإنك تقّر بصفتك الشخص الموقّع على هذه الأحكام بأنك قرأت هذه الأحكام وفهمتها وقبلتها
+                        وتوافق على الالتزام بها.
+                        {{/is}}
+
+                    </p>
+                    <p>
+                        {{#is language "en"}}
+                        If you are accessing and using the ADCB API Marketplace on behalf of a corporate entity, you
+                        represent and warrant that you are authorised to bind that entity to these Terms and you agree
+                        to these Terms on behalf of the corporate entity which employs you or which you represent.
+                        {{else}}في حالة دخولك أو استخدامك واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                        بالنيابة عن جهة مؤسسية، فإنك تقّر وتضمن بأنك مفوّض بإلزام تلك المؤسسة بهذه الأحكام وأنك توافق
+                        على هذه الأحكام بالنيابة عن المؤسسة التي توظفك أو التي تمثلها.
+                        {{/is}}
+                    </p>
+                    <p>
+                        {{#is language "en"}}
                         If you are using the ADCB API Marketplace on your own behalf (where you are acting in your own
                         business capacity) you represent and warrant that you are authorised to enter into these Terms.
+                        {{else}}
+                        إذا كنت تستخدم واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري بالأصالة عن نفسك (حيث
+                        تتصرف بصفتك التجارية) فأنت تقر وتضمن بأنك مخوّل بالموافقة على هذه الأحكام.
+                        {{/is}}
+
                     </p>
                 </div>
                 <!-- end c-cms-content -->
@@ -66,57 +113,139 @@ hasPage: false
 
         <div class="accordion-item js-acc-item" data-index="1" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>2. Your access and use of the ADCB API Marketplace</span>
+                <span>
+                    {{#is language "en"}}
+                    2. Your access and use of the ADCB API Marketplace
+                    {{else}}
+                    2. الدخول إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري واستخدامها
+                    {{/is}}
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
-                    <p>To access and use certain parts and functionalities of the ADCB API Marketplace you must register
-                        by creating an ADCB developer account with login details (including password).
+                    <p>
+                        {{#is language "en"}}
+                        To access and use certain parts and functionalities of the ADCB API Marketplace you must
+                        register by creating an ADCB developer account with login details (including password).
+                        {{else}}
+                        يتعين عليك التسجيل في واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري من خلال إنشاء
+                        حساب مطور لدى بنك أبوظبي التجاري وإدخال تفاصيل تسجيل الدخول (بما في ذلك كلمة المرور) لكي تتمكن
+                        من الدخول إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري واستخدام أجزاء ووظائف
+                        محددة فيها.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         You must protect your password(s), API key, and client ID, login details (“Developer
                         Credentials”) from unauthorised use and keep them strictly confidential and you must not
                         disclose your login details to any other person.
-                    </p>
-                    <p>
-                        If you have any reason to suspect that your Developer Credentials have been in any way compromised, then you must inform us immediately via the method set out below.  You must also inform us immediately if you become aware of, or suspect, any breach of security. 
-                    </p>
-                    <p>
-                        To contact ADCB for these reasons, or for any other reasons, please click the ‘<a
-                            href="contact.html">Contact Us</a>’ link set out under the ‘<a
-                            href="support.html">Support</a>’ section set out on the ADCB API Marketplace.
+                        {{else}}
+                        يتعين عليك حماية كلمة المرور (كلمات المرور) الخاصة بك وشفرة واجهة برمجة التطبيقات الخاصة بك ورقم
+                        تعريف العميل، وتفاصيل تسجيل الدخول ("بيانات المطور") من الاستخدام غير المصرح به والحفاظ على
+                        سريتها التامة وعدم الإفصاح عن تفاصيل تسجيل الدخول الخاصة بك لأي شخص.
+                        {{/is}}
 
                     </p>
                     <p>
-                        All activity that occurs through use of your Developer Credentials you are deemed to have authorised all such activity.
+                        {{#is language "en"}}
+                        If you have any reason to suspect that your Developer Credentials have been in any way
+                        compromised, then you must inform us immediately via the method set out below. You must also
+                        inform us immediately if you become aware of, or suspect, any breach of security.
+                        {{else}}
+                        إذا كان لديك أي سبب يدعوك للاشتباه باختراق بيانات المطور الخاصة بك بأي طريقة، يجب عليك إخطارنا
+                        على الفور من خلال الطريقة الموضحة أدناه. كما يجب عليك إبلاغنا على الفور إذا علمت أو اشتبهت بجود
+                        أي خرق لأمن البيانات.
+                        {{/is}}
 
                     </p>
-                    <p>We are entitled to rely on any action taken under your account without further verification, and
+                    <p>
+                        {{#is language "en"}}
+                        To contact ADCB for these reasons, or for any other reasons, please click the ‘
+                        <a href="contact.html">Contact Us</a>’ link set out under the ‘
+                        <a href="support.html">Support</a>’ section set out on the ADCB API Marketplace.
+                        {{else}}
+                        للتواصل مع البنك لهذه الأسباب أو لأي أسباب أخرى، يرجى الضغط على رابط
+                        <a href="contact.html">"اتصل بنا"</a>
+                        الوارد في قسم
+                        <a href="support.html"> "الدعم"</a>
+                        الموضح في واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
+
+
+                    </p>
+                    <p>
+                        {{#is language "en"}}
+                        All activity that occurs through use of your Developer Credentials you are deemed to have
+                        authorised all such activity.
+                        {{else}}
+                        كافة الأنشطة التي تتم ممارستها باستخدام بيانات المطور الخاصة بك تمثل تصريحاً منك بالقيام بها..
+                        {{/is}}
+
+
+                    </p>
+                    <p>
+                        {{#is language "en"}}
+                        We are entitled to rely on any action taken under your account without further verification, and
                         hold you fully responsible for each such action.
+                        {{else}}
+                        يحق لنا الاعتماد على أي إجراء يتم اتخاذه بموجب حسابك دون مزيد من التحقّق، ونحملك المسؤولية
+                        الكاملة عن كل إجراء من هذا القبيل.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         ADCB may in its sole discretion approve or reject your application and registration without
                         providing any reason(s). You must ensure that any information you provide in relation to your
                         application and registration is correct and complete. You are responsible to keep such
                         information up to date and accurate throughout the duration of your application, registration
                         and throughout your use of the ADCB API Marketplace.
+                        {{else}}
+                        يجوز لبنك أبوظبي التجاري وفقاً لتقديره المطلق الموافقة على طلبك والتسجيل أو رفضه دون إبداء أي
+                        سبب. يجب عليك التأكّد من أن أي معلومات تقدمها فيما يتعلق بطلبك وتسجيلك صحيحة وكاملة. كما أنك
+                        مسؤول عن تحديث هذه المعلومات ودقتها طوال مدة طلبك والتسجيل وطوال فترة استخدامك لواجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
+
 
 
                     </p>
                     <p>
+                        {{#is language "en"}}
                         You are responsible for configuring your information technology systems and software to access
                         the ADCB API Marketplace.
+                        {{else}}
+                        أنت مسؤول عن ضبط أنظمة تقنية المعلومات الخاصة بك والبرمجيات اللازمة للدخول إلى واجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         You must comply with any instructions that we provide you whether published on the ADCB API
                         Marketplace itself or in email correspondence, alerts and communications sent from time to time.
                         If ADCB determines that your use and access to the ADCB API Marketplace is in excess of ‘fair
                         use’ then it may in its sole discretion immediately suspend and/or terminate your use without
                         notice.
+                        {{else}}
+                        يتعين عليك الالتزام بالتعليمات التي نزودك بها سواء كانت منشورة على واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري أو تم إرسالها لك عبر البريد الإلكتروني أو التنبيهات أو أي
+                        وسيلة أخرى من وقت لآخر. إذا قرر البنك أن استخدامك ودخولك إلى واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري يتجاوز مبدأ "الاستخدام العادل" فسوف يحق للبنك، وفقاً لتقديره
+                        المطلق، تعليق و / أو إيقاف استخدامك للواجهة على الفور ودون إشعار مسبق.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         Your continued access to the ADCB API Marketplace is determined by us at our discretion.
+                        {{else}}
+                        يتم تحديد دخولك المستمر إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري من قبلنا
+                        وفقاً لتقديرنا الخاص.
+                        {{/is}}
+
                     </p>
 
 
@@ -126,61 +255,131 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="2" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>3. Ownership of the ADCB API Marketplace</span>
+                <span>
+                    {{#is language "en"}}
+                    3. Ownership of the ADCB API Marketplace
+                    {{else}}
+                    3. ملكية واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                    {{/is}}
+
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
                     <p>
+                        {{#is language "en"}}
                         You acknowledge that ADCB or its licensors owns all legal right, title and interest rights in
                         the ADCB API Marketplace.
+                        {{else}}
+                        أنت تقرّ باحتفاظ بنك أبوظبي التجاري، أو الجهات المُرخِصة له، بكافة الحقوق القانونية وحقوق
+                        الملكية وحقوق الانتفاع في واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         Upon successful registration, ADCB grants you a limited, non-exclusive, non-transferable,
                         revocable and non-sublicensable license to use the ADCB API Marketplace for the term of your
                         registration. This license is for the sole purpose of enabling you to use the functionalities of
                         the ADCB API Marketplace (including the Sandbox) in accordance with these Terms.
+                        {{else}}
+                        بعد التسجيل بنجاح، يمنحك البنك ترخيصاً محدوداً وغير حصري وغير قابل للتحويل أو الإلغاء أو الترخيص
+                        من الباطن لاستخدام واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري طوال مدة التسجيل.
+                        الغرض الوحيد من هذا الترخيص هو تمكينك من استخدام وظائف واجهة برمجة التطبيقات API Marketplace من
+                        بنك أبوظبي التجاري (بما في ذلك بيئة الاختبار المعزولة) وفقاً لهذه الأحكام.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         These Terms do not grant you with any right, title or interest in or to the ADCB brand or
                         trademarks. Any use of the ADCB brand or trademark requires the prior consent of ADCB, in its
                         sole discretion, and is subject to your strict compliance with ADCB’s brand guidelines which are
                         available upon request.
+                        {{else}}
+                        لا تمنحك هذه الأحكام أي حق أو ملكية أو مصلحة في العلامة التجارية أو الاسم التجاري لبنك أبوظبي
+                        التجاري. يتطلب أي استخدام للعلامة التجارية أو الاسم التجاري لبنك أبوظبي التجاري موافقة مسبقة من
+                        البنك، وفقاً لتقديره الخاص، ويخضع لالتزامك الصارم بتعليمات العلامة التجارية لبنك أبوظبي التجاري
+                        والمتاحة عند الطلب.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         You are fully responsible for the development, functioning, maintenance and service of your
                         application. You must comply with and act in accordance with all instructions, documentation,
                         systems, software and other requirements as stated on and/or made available by ADCB in relation
                         to the ADCB API Marketplace. You must comply with all legal requirements and refrain from
                         creating content that is unlawful or otherwise objectionable, or that may harm ADCB’s
                         reputation.
+                        {{else}}
+                        أنت مسؤول مسؤولية كاملة عن تطوير وتشغيل وصيانة التطبيق الخاص بك. يجب عليك الامتثال والعمل وفقاً
+                        لجميع التعليمات والوثائق والأنظمة والبرامج والمتطلبات الأخرى على النحو المذكور و / أو المتاح من
+                        قبل بنك أبوظبي التجاري فيما يتعلق بواجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        كما يجب عليك الامتثال لجميع المتطلبات القانونية والامتناع عن إنشاء محتوى غير قانوني أو مرفوض بأي
+                        شكل آخر، أو أي محتوى قد يضر بسمعة البنك.
+                        {{/is}}
+
 
                     </p>
                     <p>
+                        {{#is language "en"}}
                         ADCB may grant you use of the Sandbox which forms part of the ADCB API Marketplace. You shall
                         not use the Sandbox in connection with any live transaction (whether virtual or real) or any
                         transaction with legal or other real consequences to you or any participant in the transaction.
+                        {{else}}
+                        قد يمنحك البنك حق استخدام بيئة الاختبار المعزولة التي تشكّل جزءاً من واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري. ولا يجوز لك استخدام بيئة الاختبار المعزولة بالتزامن مع أي
+                        معاملة مباشرة (سواء كانت افتراضية أو واقعية) أو أي معاملة لها عواقب قانونية أو حقيقية أخرى عليك
+                        أو على أي مشارك في المعاملة.
+                        {{/is}}
                     </p>
-                    <p>You are responsible for the operation and security of your own systems and you shall not:
+                    <p>
+                        {{#is language "en"}}
+                        You are responsible for the operation and security of your own systems and you shall not:
+                        {{else}}
+                        أنت مسؤول عن تشغيل الأنظمة الخاصة بك وأمنها ولا يجوز لك:
+                        {{/is}}
+
                     </p>
                     <ul>
                         <li>
+                            {{#is language "en"}}
                             Modify, copy, adapt, reverse engineer, distribute, transmit, display, publish, lease, sell,
                             license, create derivative works from or use any content on the ADCB API Marketplace for any
                             other purpose than in accordance with these Terms;
+                            {{else}}
+                            تعديل أو نسخ أو تكييف أو إجراء هندسة عكسية أو توزيع أو إرسال أو عرض أو نشر أو تأجير أو بيع
+                            أو ترخيص أو إنشاء أعمال مشتقة من واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                            أو استخدام أي محتوى عليها لأي غرض آخر لا يتوافق مع هذه الأحكام؛
+                            {{/is}}
+
                         </li>
                         <li>
+                            {{#is language "en"}}
                             Damage, corrupt, introduce viruses including worms, trojan horses, ransomware or other
                             contaminants, and any code which can be used to access, modify, delete or damage any data,
                             files or other computer programs or disrupt and deny services and/or otherwise negatively
                             affect the operation and security of, or attempt unauthorised access to, ADCB’s services or
                             systems; or
+                            {{else}}
+                            إتلاف أو إفساد أو إدخال فيروسات بما في ذلك الفيروسات المتنقلة أو أحصنة طروادة أو برامج
+                            الفدية أو البرامج الخبيثة الأخرى وأي رمز يمكن استخدامه للوصول إلى أي بيانات أو ملفات أو
+                            برامج حاسب آلي أخرى أو تعديلها أو حذفها أو إتلافها أو تعطيل الخدمات ورفضها و / أو التأثير
+                            سلباً على تشغيل خدمات أو أنظمة بنك أبوظبي التجاري أو أمنها أو محاولة الوصول غير المصرح به
+                            لها؛ أو
+                            {{/is}}
                         </li>
                         <li>
+                            {{#is language "en"}}
                             Use the ADCB API Marketplace for scalability testing or equivalent.
+                            {{else}}
+                            استخدام واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري لاختبار قابلية التوسع أو
+                            أي اختبار مماثل.
+                            {{/is}}
                         </li>
                     </ul>
                     <p>
+                        {{#is language "en"}}
                         You shall not use part of the ADCB API Marketplace to scrape, build databases or otherwise
                         create copies of any information in order to use such information for any purpose which does not
                         relate to the development of APIs in accordance with these Terms ADCB has the right to change,
@@ -189,33 +388,38 @@ hasPage: false
                         ADCB reserves the right to do so without prior notice. Modifications and changes to the ADCB API
                         Marketplace may affect your use of the ADCB API Marketplace. ADCB will not be liable for any
                         loss or damage resulting therefrom.
-                    </p>
-                    <p>
-                        ADCB has the right to change, modify or expand the functionalities, features and services
-                        available on the ADCB API Marketplace at any time. Where possible, ADCB will provide prior
-                        notice of any such action, but ADCB reserves the right to do so without prior notice.
-                        Modifications and changes to the ADCB API Marketplace may affect your use of the ADCB API
-                        Marketplace. ADCB will not be liable for any loss or damage resulting therefrom.
-                    </p>
+                        {{else}}
+                        لا يجوز لك استخدام أي جزء من واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                        لاستخراج أو إنشاء قواعد بيانات أو إنشاء نسخ من أي معلومات بطريقة أخرى من أجل استخدام هذه
+                        المعلومات لأي غرض لا يتعلق بتطوير واجهة برمجة التطبيقات وفقاً لهذه الأحكام. ويحق للبنك تغيير أو
+                        تعديل أو توسيع الوظائف والميزات والخدمات المتاحة في واجهة برمجة التطبيقات API Marketplace من بنك
+                        أبوظبي التجاري في أي وقت. سيقدم البنك، إن أمكن، إشعاراً مسبقاً بأي إجراء من هذا القبيل، ولكن
+                        يحتفظ البنك بحقه في القيام بأي إجراء دون إشعار مسبق. قد تؤثر التعديلات على واجهة برمجة التطبيقات
+                        API Marketplace من بنك أبوظبي التجاري أو التغييرات التي تجرى عليها على استخدامك، ولا يتحمل البنك
+                        المسؤولية عن أي خسائر أو أضرار ناجمة عن ذلك.
+                        {{/is}}
 
-                    <p>
-                        API Marketplace may affect your use of the ADCB API Marketplace. ADCB will not be liable for any
-                        loss or damage resulting therefrom.
                     </p>
-
                 </div>
                 <!-- end c-cms-content -->
             </div>
         </div>
         <div class="accordion-item js-acc-item" data-index="3" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>4. Confidentiality</span>
+                <span>
+                    {{#is language "en"}}
+                    4. Confidentiality
+                    {{else}}
+                    4. سرية المعلومات
+                    {{/is}}
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
 
                     <p>
+                        {{#is language "en"}}
                         Our communications to you and the ADCB API Marketplace may contain Confidential Information. You
                         will treat all Confidential Information as strictly confidential and use the same degree of care
                         to prevent disclosure of ADCB’s Confidential Information as you would use with respect to your
@@ -223,50 +427,115 @@ hasPage: false
                         You must not disclose ADCB Confidential Information to any third party and you must ensure that
                         any representatives or other persons to whom you are permitted by these Terms to provide access
                         does the same.
+                        {{else}}
+                        قد تحتوي مراسلاتنا إليك وواجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري على معلومات
+                        سرية. لذا يتعيّن عليك التعامل مع جميع المعلومات السرية على أنها سرية تماماً والتزام العناية
+                        الواجبة لمنع الإفصاح عن المعلومات السرية الخاصة بالبنك بنفس المستوى الذي تتعامل به فيما يتعلق
+                        بمعلوماتك الأكثر سرية وخصوصية (وليس أقل من المستوى المعقول). يجب عليك عدم الإفصاح عن المعلومات
+                        السرية لبنك أبوظبي التجاري لأي طرف ثالث ويجب عليك التأكد من امتثال أي ممثلين أو أشخاص آخرين تسمح
+                        لك هذه الإحكام بإتاحة الوصول إليهم بذلك.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         All ADCB’s Confidential Information is and remains our property, and, except as expressly
                         provided in this Agreement:
+                        {{else}}
+                        إن جميع المعلومات السرية الخاصة ببنك أبوظبي التجاري هي ملكية خاصة لنا وستبقى كذلك، وباستثناء ما
+                        هو منصوص عليه صراحةً في هذه الاتفاقية:
+                        {{/is}}
+
                     </p>
                     <ul>
                         <li>
+                            {{#is language "en"}}
                             no license or other right in any ADCB’s Confidential Information is granted to you, and
+                            {{else}}
+                            لا يتم منحك أي ترخيص أو أي حق آخر في استخدام أي معلومات سرية خاصة ببنك أبوظبي التجاري، و
+                            {{/is}}
                         </li>
                         <li>
+                            {{#is language "en"}}
                             you may not use or disclose any ADCB’s Confidential Information without our prior written
                             consent.
+                            {{else}}
+                            لا يجوز لك استخدام أي معلومات سرية خاصة ببنك أبوظبي التجاري أو الإفصاح عنها دون موافقة
+                            كتابية مسبقة منا.
+                            {{/is}}
+
                         </li>
                     </ul>
                     <p>
+                        {{#is language "en"}}
                         On termination of this Agreement or on our written request at any time, you will destroy or
                         return to us all ADCB Confidential Information in your custody or control. This provision will
                         survive any termination of this Agreement for so long as you have in your possession any ADCB
                         Confidential Information.
+                        {{else}}
+                        يتعين عليك إتلاف أو إعادة جميع معلومات بنك أبوظبي التجاري السرية الموجودة في حيازتك أو تحت سلطتك
+                        عند إنهاء هذه الاتفاقية، أو بناءً على طلب كتابي من قبلنا في أي وقت. ستظل هذه الفقرة سارية بعد
+                        إنهاء هذه الاتفاقية ما دامت أي معلومات سرية من بنك أبوظبي التجاري في حيازتك.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         Both we and you may disclose or allow disclosure of each other’s Confidential Information:
+                        {{else}}
+                        يحق لكلينا الإفصاح أو السماح بالإفصاح عن المعلومات السرية فيما بيننا في حالة:
+                        {{/is}}
+
                     </p>
                     <ul>
                         <li>
+                            {{#is language "en"}}
                             when disclosure is required by Applicable Law or the rules or order of any court, tribunal
                             or agency of competent jurisdiction;
+                            {{else}}
+                            إذا كان الإفصاح مطلوباً بموجب القانون المعمول به أو قواعد أو أحكام صادرة عن أي محكمة أو هيئة
+                            قضائية أو وكالة ذات اختصاص قضائي؛
+                            {{/is}}
+
                         </li>
                         <li>
+                            {{#is language "en"}}
                             to the extent that each other’s Confidential Information has become publicly available or
                             generally known to the public at the time of the disclosure other than as a result of a
                             breach of these Terms; or
+                            {{else}}
+                            إلى الحد الذي تصبح فيه المعلومات السرية الخاصة بكلينا متاحة للجمهور أو معروفة بشكل عام
+                            للجمهور في وقت الإفصاح بخلاف ما يترتب عن خرق هذه الأحكام؛ أو
+                            {{/is}}
+
                         </li>
                         <li>
+                            {{#is language "en"}}
                             if given prior written approval to disclose the Confidential Information.
+                            {{else}}
+                            في حالة الحصول على موافقة كتابية مسبقة للإفصاح عن المعلومات السرية.
+                            {{/is}}
+
                         </li>
                     </ul>
                     <p>
+                        {{#is language "en"}}
                         Both we and you may disclose each other’s Confidential Information to our officers, employees or
                         professional advisers to the extent necessary to enable us to perform or enforce any of our
                         duties or rights under these Terms.
+                        {{else}}
+                        يجوز لك ولنا الإفصاح عن المعلومات السرية الخاصة بنا إلى مسؤولينا أو موظفينا أو مستشارينا
+                        المحترفين بالقدر اللازم لتمكيننا من أداء أو تنفيذ أي من واجباتنا أو حقوقنا بموجب هذه الأحكام.
+                        {{/is}}
+
                     </p>
                     <p>
+                        {{#is language "en"}}
                         The duties in this section shall continue to apply even after these Terms terminate.
+                        {{else}}
+                        تظل الصلاحيات الواردة في هذا القسم منطبقة حتى بعد إنهاء هذه الأحكام.
+                        {{/is}}
+
                     </p>
                 </div>
                 <!-- end c-cms-content -->
@@ -274,42 +543,98 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="4" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>5. Warranties and Representations</span>
+                <span>
+                    {{#is language "en"}}
+                    5. Warranties and Representations
+                    {{else}}
+                    5. الضمانات والتعهدات
+                    {{/is}}
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
-                    <p>You warrant and represent that:</p>
-                    <ul>
-                        <li>
-                            all information you give to us in connection with your access to the ADCB API Marketplace is
-                            accurate, correct and up-to-date;
-                        </li>
-                        <li>
-                            you will only access resources available within the ADCB API Marketplace to which you have
-                            been granted authorised access; and
-                        </li>
-                        <li>
-                            you will at all times comply with all Applicable Law.
-                        </li>
-                    </ul>
                     <p>
-                        You agree that you will not use the ADCB API Marketplace in a way that:
+                        {{#is language "en"}}
+                        You warrant and represent that:
+                        {{else}}
+                        أنت تتعهد وتضمن ما يلي:
+                        {{/is}}
                     </p>
                     <ul>
                         <li>
+                            {{#is language "en"}}
+                            all information you give to us in connection with your access to the ADCB API Marketplace is
+                            accurate, correct and up-to-date;
+                            {{else}}
+                            جميع المعلومات التي تقدمها لنا فيما يتعلق بوصولك إلى واجهة برمجة التطبيقات API Marketplace
+                            من بنك أبوظبي التجاري دقيقة وصحيحة وحديثة؛
+                            {{/is}}
+
+                        </li>
+                        <li>
+                            {{#is language "en"}}
+                            you will only access resources available within the ADCB API Marketplace to which you have
+                            been granted authorised access; and
+                            {{else}}
+                            الوصول فقط إلى الموارد المتاحة على واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي
+                            التجاري والتي تم منحك حق الوصول المصرح به إليها؛ و
+                            {{/is}}
+
+                        </li>
+                        <li>
+                            {{#is language "en"}}
+                            you will at all times comply with all Applicable Law.
+                            {{else}}
+                            · الامتثال لجميع القوانين المعمول بها في جميع الأوقات.
+                            {{/is}}
+
+                        </li>
+                    </ul>
+                    <p>
+                        {{#is language "en"}}
+                        You agree that you will not use the ADCB API Marketplace in a way that:
+                        {{else}}
+                        أنت توافق على أنك لن تستخدم واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري بأي
+                        طريقة تنطوي على:
+                        {{/is}}
+
+                    </p>
+                    <ul>
+                        <li>
+                            {{#is language "en"}}
                             infringes the Intellectual Property Rights, privacy, confidentiality or any other rights of
                             any third party (or in a manner which otherwise breaches any Applicable Law);
+                            {{else}}
+                            انتهاك حقوق الملكية الفكرية أو الخصوصية أو السرية أو أي حقوق أخرى لأي طرف ثالث (أو بطريقة
+                            أخرى تنتهك أي قانون معمول به)؛
+                            {{/is}}
+
                         </li>
                         <li>
+                            {{#is language "en"}}
                             introduces a virus, worm, trojan, malware or any other similar software or code into the
                             ADCB API Marketplace;
+                            {{else}}
+                            إدخال فيروسات أو فيروسات متنقلة أو أحصنة طروادة أو برامج ضارة أو أي برنامج أو رمز مماثل إلى
+                            واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري؛
+                            {{/is}}
                         </li>
                         <li>
+                            {{#is language "en"}}
                             is for the purpose of, or in connection to, improper or illegal activities; or
+                            {{else}}
+                            أي أنشطة غير لائقة أو غير قانونية؛ أو
+                            {{/is}}
+
                         </li>
                         <li>
+                            {{#is language "en"}}
                             for any reason other than that for which your access was granted.
+                            {{else}}
+                            أي سبب آخر بخلاف الأسباب التي تم منحك حق الدخول من أجلها.
+                            {{/is}}
+
                         </li>
                     </ul>
                 </div>
@@ -318,18 +643,31 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="5" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>6. Feedback</span>
+                <span>
+                    {{#is language "en"}}
+                    6. Feedback
+                    {{else}}
+                    6. الملاحظات والمقترحات
+                    {{/is}}
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
                     <p>
+                        {{#is language "en"}}
                         By submitting feedback, comments, ideas and suggestions in relation to the ADCB API Marketplace,
                         you grant a non-exclusive, perpetual, irrevocable, and royalty-free license to any Intellectual
                         Property Rights you may have in such feedback to ADCB to improve the ADCB API Marketplace or any
                         other products or services. Any such feedback is voluntary and ADCB may consider or is
                         developing products and services that are the same or similar to your feedback.
-
+                        {{else}}
+                        بتقديم الملاحظات والتعليقات والأفكار والمقترحات فيما يتعلق بواجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري، فإنك تمنح البنك ترخيصاً غير حصري ودائم وغير قابل للإلغاء وغير
+                        خاضع لأي حقوق ملكية فكرية قد تكون لديك في مثل هذه الملاحظات لتحسين واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري أو أي منتجات أو خدمات أخرى. تكون أي ملاحظات طوعية وقد يقوم
+                        البنك بتطوير منتجات وخدمات مماثلة أو مشابهة لملاحظاتك.
+                        {{/is}}
                     </p>
 
 
@@ -339,18 +677,38 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="6" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>7. Personal Data</span>
+                <span>
+                    {{#is language "en"}}
+                    7. Personal Data
+                    {{else}}
+                    7. البيانات الشخصية
+                    {{/is}}
+
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
                     <p>
-                        The ADCB ‘<a href="privacy-policy.html">Privacy Notice</a>’ governs the use of your personal
+                        {{#is language "en"}}
+                        The ADCB ‘<a href="privacy-notice.html">Privacy Notice</a>’ governs the use of your personal
                         data and the information provided to us by you. By accepting these Terms you also acknowledge
-                        that you have read and agreed to the terms of the ADCB ‘<a href="privacy-policy.html">Privacy
+                        that you have read and agreed to the terms of the ADCB ‘<a href="privacy-notice.html">Privacy
                             Notice</a>’, as amended from time to time. You can view the ADCB ‘<a
-                            href="privacy-policy.html">Privacy Notice</a>’, and any amendments made to it either via the
+                            href="privacy-notice.html">Privacy Notice</a>’, and any amendments made to it either via the
                         hyperlink or on the ADCB API Marketplace.
+                        {{else}}
+                        يحكم
+                        <a href="privacy-notice.html"> إشعار الخصوصية</a>
+                        من بنك أبوظبي التجاري استخدام بياناتك الشخصية والمعلومات التي قدمتها إلينا. بقبولك لهذه الأحكام،
+                        فإنك تقر أيضاً بأنك قد قرأت ووافقت على أحكام
+                        <a href="privacy-notice.html"> إشعار الخصوصية</a>
+                        لبنك أبوظبي التجاري، بصيغته المعدّلة من وقت لآخر. يمكنك الاطلاع على
+                        <a href="privacy-notice.html">إشعار الخصوصية</a>
+                        لبنك أبوظبي التجاري وأي تعديلات يتم إجراؤها عليه إما عبر الرابط أو على موقع واجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
+
 
                     </p>
 
@@ -361,49 +719,94 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="7" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>8. Liability</span>
+                <span>
+                    {{#is language "en"}}
+                    8. Liability
+                    {{else}}
+                    8. الالتزامات
+                    {{/is}}
+
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
                     <p>
+                        {{#is language "en"}}
                         To the maximum extent permitted by Law, and except as expressly provided for in these Terms
                         access to the ADCB API Marketplace and any content provided through the ADCB API Marketplace is
                         made available to you on an “as is” and “as available” basis and we do not provide any
                         warranties for accuracy of the ADCB API Marketplace or any content.
-
+                        {{else}}
+                        إلى أقصى حد يسمح به القانون وباستثناء ما هو منصوص عليه صراحةً في هذه الأحكام، فإن الدخول إلى
+                        واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري وأي محتوى يتم توفيره من خلالها متاح
+                        لك على أساس "كما هو" و "حسب إتاحته" ولا نقدم أي ضمانات لدقة واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري وأي محتوى عليها.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         ADCB do not represent that access to the ADCB API Marketplace will be continuously available for
                         use or is without error, inaccuracy or defect and your access to the ADCB API Marketplace is at
                         your sole risk.
-
+                        {{else}}
+                        لا يتعهد البنك بإتاحة الوصول إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                        بشكل مستمر أو بخلوها من الأخطاء أو بدقتها أو بعدم وجود أعطال ويكون وصولك إلى واجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري على مسؤوليتك وحدك.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         ADCB disclaims any and all express or implied representations, and warranties of any kind with
                         respect to your access to the ADCB API Marketplace, including but not limited to condition,
                         conformity to any representation or description, compatibility with all equipment and software
                         configurations, existence of any latent or patent defects, negligence, warranties of title,
                         against infringement, and merchantability or fitness for a particular use or purpose.
+                        {{else}}
+                        يخلي البنك مسؤوليته عن جميع الإقرارات والضمانات الصريحة أو الضمنية أو أي جزء منها فيما يتعلق
+                        بوصولك إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري، بما في ذلك على سبيل
+                        المثال لا الحصر الامتثال لأي تعهد أو وصف، أو توافق واجهة برمجة التطبيقات API Marketplace من بنك
+                        أبوظبي التجاري مع جميع تكوينات الأجهزة والبرامج، وأي ضمانات بعدم وجود أي عيوب ظاهرة أو كامنة، أو
+                        إهمال، أو ضمانات للملكية، أو ضمانات بعدم الانتهاكات، أو الضمانات المتعلقة بقابلية التسويق أو
+                        الملاءمة لاستخدام أو غرض معين.
+                        {{/is}}
+
 
                     </p>
                     <p>
+                        {{#is language "en"}}
                         In no event shall we or our third party providers liable for any loss (whether direct or
                         indirect loss and whether based on contract, tort or any other legal basis, even if we have been
                         advised of the possibility of such damages) from your access and/or use of the ADCB API
                         Marketplace and all terms which would otherwise be implied by Applicable Law are excluded.
-
+                        {{else}}
+                        لا نتحمل نحن أو مقدمو الخدمات من الأطراف الثالثة المسؤولية بأي حال من الأحوال عن أي خسائر (سواء
+                        كانت خسائر مباشرة أو غير مباشرة وسواء كانت تستند إلى عقد أو ضرر أو أي أساس قانوني آخر، حتى لو تم
+                        إبلاغنا بإمكانية حدوث مثل هذه الأضرار) ناجمة عن وصولك إلى واجهة برمجة التطبيقات API Marketplace
+                        من بنك أبوظبي التجاري و / أو استخدامك لها وجميع الأحكام التي قد تكون ضمنية بموجب القانون المعمول
+                        به مستبعدة.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         Nothing in these Terms excludes any liabilities to the extent they cannot be excluded under
                         Applicable Law.
-
+                        {{else}}
+                        لا يوجد في هذه الأحكام ما يستبعد أي التزامات إلى الحد الذي لا يسمح باستبعادها بموجب القانون
+                        المعمول به.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         You will fully indemnify ADCB against any direct, indirect and/or consequential losses, damages,
                         costs and expenses (including legal expenses) incurred by ADCB and arising from or in relation
                         to your use of the ADCB API Marketplace, including any breach of these Terms.
-
+                        {{else}}
+                        سوف تقوم بتعويض بنك أبوظبي التجاري بالكامل عن أي خسائر أو أضرار أو تكاليف أو نفقات مباشرة أو غير
+                        مباشرة و / أو تبعية (بما في ذلك النفقات القانونية) التي يتحملها البنك والتي تنشأ عن أو تتعلق
+                        باستخدامك لواجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري، بما في ذلك أي خرق لهذه
+                        الأحكام.
+                        {{/is}}
                     </p>
 
                 </div>
@@ -412,39 +815,85 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="8" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>9. Suspension and/or Termination</span>
+                <span>
+                    {{#is language "en"}}
+                    9. Suspension and/or Termination
+                    {{else}}
+                    9. تعليق الخدمة و / أو إنهاؤها
+                    {{/is}}
+
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
-                    <p>ADCB may suspend or terminate your access to the ADCB API Marketplace if you are in breach of any
-                        of these Terms, any Restricted API Access terms or your Development and Testing Agreement (if
-                        applicable).
+                    <p>
+                        {{#is language "en"}}
+                        ADCB may suspend or terminate your access to the ADCB API Marketplace if you are in breach of
+                        any of these Terms, any Restricted API Access terms or your Development and Testing Agreement
+                        (if applicable).
+                        {{else}}
+                        يحق للبنك تعليق أو إنهاء دخولك إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري،
+                        إذا انتهكت أياً من هذه الأحكام أو أي من أحكام الدخول المقيد لواجهة برمجة التطبيقات أو اتفاقية
+                        التطوير والاختبار الخاصة بك (إن وجدت).
+                        {{/is}}
+
                     </p>
-                    <p>ADCB may also terminate or suspend your access to the ADCB API Marketplace if in our sole
+                    <p>
+                        {{#is language "en"}}
+                        ADCB may also terminate or suspend your access to the ADCB API Marketplace if in our sole
                         reasonable opinion we have a legitimate concern about your access to the ADCB API Marketplace or
                         conclude that you have suffered a security breach that impacts on the confidentiality or
                         integrity of the ADCB API Marketplace.
-
-                    </p>
-                    <p>ADCB may exercise these rights to suspend or terminate immediately, or at any point in our sole
-                        discretion, without notice.
+                        {{else}}
+                        يحق للبنك أيضاً إنهاء أو تعليق دخولك إلى المنصة إذا ساورنا، حسب أسبابنا المعقولة الخاصة، قلق
+                        مشروع بشأن وصولك إلى واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري أو استنتجنا أنك
+                        تعرضت لخرق أمني يؤثر على سرية وسلامة واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي
+                        التجاري.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
+                        ADCB may exercise these rights to suspend or terminate immediately, or at any point in our sole
+                        discretion, without notice.
+                        {{else}}
+                        يحق للبنك ممارسة هذه الحقوق لتعليق الدخول أو إنهائه على الفور، أو في أي وقت وفقاً لتقديرنا
+                        الخاص، ودون إشعار مسبق.
+                        {{/is}}
+
+                    </p>
+                    <p>
+                        {{#is language "en"}}
                         On termination of these Terms you must (at our election) immediately return to us, destroy or
                         permanently erase all property and materials containing, reflecting, incorporating or based on
                         our Confidential Information or Intellectual Property Rights which is in your possession or
                         under your control. For the avoidance of doubt, you may retain such property and materials for
                         as long as required by Applicable Law and we shall immediately disable your access to the ADCB
                         API Marketplace.
-
-                    </p>
-                    <p>On suspension of these Terms we may disable or suspend your access to the ADCB API Marketplace.
+                        {{else}}
+                        عند إنهاء هذه الأحكام، يجب عليك (بناءً على اختيارنا) الرجوع إلينا على الفور، أو إتلاف أو حذف
+                        جميع الممتلكات والمواد التي تحتوي على معلوماتنا السرية أو حقوق الملكية الفكرية الموجودة في حوزتك
+                        أو تحت سلطتك أو تعكسها أو تدمجها أو تستند إليها. لتجنب اللبس، يمكنك الاحتفاظ بهذه الممتلكات
+                        والمواد للمدة التي يقتضيها القانون المعمول به وسنقوم على الفور بتعطيل دخولك لواجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
+                        On suspension of these Terms we may disable or suspend your access to the ADCB API Marketplace.
+                        {{else}}
+                        عند تعليق هذه الأحكام، يحق لنا تعطيل أو تعليق دخولك إلى واجهة برمجة التطبيقات API Marketplace من
+                        بنك أبوظبي التجاري.
+                        {{/is}}
+                    </p>
+                    <p>
+                        {{#is language "en"}}
                         Suspension and termination of these Terms does not affect any continuing rights and obligations
                         of the parties set out in these Terms.
-
+                        {{else}}
+                        لن يؤثر تعليق هذه الأحكام أو إنهائها على أي حقوق والتزامات مستمرة للأطراف المنصوص عليها في هذه
+                        الأحكام.
+                        {{/is}}
                     </p>
                 </div>
                 <!-- end c-cms-content -->
@@ -452,59 +901,151 @@ hasPage: false
         </div>
         <div class="accordion-item js-acc-item" data-index="9" data-state="collapsed">
             <a href="#" class="accordion-item__title js-acc-title icon-add">
-                <span>10. Other terms</span>
+                <span>
+                    {{#is language "en"}}
+                    10. Other terms
+                    {{else}}
+                    10. أحكام أخرى
+                    {{/is}}
+                </span>
             </a>
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
-                    <p>These Terms are subject to change from time to time and in our sole discretion. We will give you
+                    <p>
+                        {{#is language "en"}}
+                        These Terms are subject to change from time to time and in our sole discretion. We will give you
                         notice of these changes by posting an updated version of the Terms on ADCB.com and/or the ADCB
                         API Marketplace site. By continuing to use the ADCB API Marketplace, you agree to be bound by
                         any new Terms we post.
+                        {{else}}
+                        تخضع هذه الأحكام للتغيير من وقت لآخر ووفقاً لتقديرنا الخاص. وسوف نقوم بإبلاغك بهذه التغييرات عن
+                        طريق نشر نسخة محدّثة من الأحكام على موقع البنك ADCB.com و / أو موقع واجهة برمجة التطبيقات API
+                        Marketplace من بنك أبوظبي التجاري. باستمرارك في استخدام واجهة برمجة التطبيقات API Marketplace من
+                        بنك أبوظبي التجاري، فإنك توافق على الالتزام بأي أحكام جديدة نقوم بنشرها.
+                        {{/is}}
                     </p>
-                    <p>In case any provision of these Terms is or becomes illegal, invalid or unenforceable, the
+                    <p>
+                        {{#is language "en"}}
+                        In case any provision of these Terms is or becomes illegal, invalid or unenforceable, the
                         legality, validity or enforceability of any other provision will not be affected.
+                        {{else}}
+                        في حالة أصبحت أي فقرة من فقرات هذه الأحكام غير قانونية أو باطلة أو غير قابلة للتنفيذ، فلن تتأثر
+                        شرعية أي فقرة أخرى أو صلاحيتها أو قابليتها للتنفيذ.
+                        {{/is}}
+
                     </p>
-                    <p>If you do not comply with these Terms and ADCB does not take action immediately, this doesn’t
+                    <p>
+
+                        {{#is language "en"}}
+                        If you do not comply with these Terms and ADCB does not take action immediately, this doesn’t
                         mean that ADCB waives any rights.
+                        {{else}}
+                        إذا لم تلتزم بهذه الأحكام ولم يتخذ بنك أبوظبي التجاري أي إجراء على الفور، فهذا لا يعني أن البنك
+                        تنازل عن أي حقوق.
+                        {{/is}}
                     </p>
-                    <p>Nothing in these Terms is intended to or shall create a partnership, agency, joint venture or
+                    <p>
+                        {{#is language "en"}}
+                        Nothing in these Terms is intended to or shall create a partnership, agency, joint venture or
                         co-owner relationship between ADCB and you. ADCB nor you shall have the authority to act in the
                         name of, act on behalf of or otherwise bind the other party.
+                        {{else}}
+                        لا يوجد في هذه الأحكام ما يقصد منه إنشاء شراكة أو وكالة أو مشروع مشترك أو علاقة ملكية مشتركة
+                        بينك وبين بنك أبوظبي التجاري. ولن تكون لكلينا سلطة التصرف باسم الطرف الآخر أو التصرف نيابة عنه
+                        أو إلزامه بأي شكل آخر.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         ADCB may transfer its rights and/or obligations under these Terms to a third party. Your rights
                         and obligations under these Terms cannot be transferred or assigned.
-                    </p>
-                    <p>These Terms govern the relationship between ADCB and you, and do not create any third party
-                        rights.
+                        {{else}}
+                        يجوز للبنك نقل حقوقه و / أو التزاماته بموجب هذه الأحكام إلى طرف ثالث. ولا يجوز نقل حقوقك
+                        والتزاماتك أو التنازل عنها بموجب هذه الأحكام.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
+                        These Terms govern the relationship between ADCB and you, and do not create any third party
+                        rights.
+                        {{else}}
+                        تحكم هذه الأحكام العلاقة بينك وبين بنك أبوظبي التجاري، ولا تنشئ أي حقوق لأي طرف ثالث.
+                        {{/is}}
+                    </p>
+                    <p>
+                        {{#is language "en"}}
                         You acknowledge that your breach of these Terms may cause immediate and irreparable harm to us
                         for which we may not have an adequate remedy in damages. We may obtain an injunction against you
                         from a court of competent jurisdiction and recover from you the costs incurred in seeking such
                         an injunction. Our right to obtain injunctive relief does not limit our right to seek or obtain
                         further remedies.
-
+                        {{else}}
+                        أنت تقر بأن مخالفتك لهذه الأحكام قد ينجم عنها ضرر فوري يتعذر إصلاحه لطرفنا والذي قد لا يكون له
+                        تعويض مناسب وقد نحصل على أمر قضائي ضدك من محكمة مختصة ونسترد منك التكاليف التي تحملناها خلال
+                        السعي للحصول على الأمر القضائي. إن حقنا في الحصول على أمر قضائي لا يحد من حقنا في طلب المزيد من
+                        التعويضات أو الحصول عليها.
+                        {{/is}}
                     </p>
-                    <p>The ADCB API Marketplace may, without notice to you, become unavailable at any time due to any
+                    <p>
+                        {{#is language "en"}}
+                        The ADCB API Marketplace may, without notice to you, become unavailable at any time due to any
                         planned and/or emergency maintenance as required by ADCB and without liability to you.
+                        {{else}}
+                        قد تصبح واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري غير متاحة في أي وقت، ودون أي
+                        إشعار مسبق، بسبب أي أعمال صيانة مخططة و / أو طارئة على النحو الذي يتطلبه البنك ودون أي مسؤولية
+                        تجاهك.
+                        {{/is}}
                     </p>
-                    <p>We are not liable for delay in performing, or failure to perform, any of our obligations under
+                    <p>
+                        {{#is language "en"}}
+                        We are not liable for delay in performing, or failure to perform, any of our obligations under
                         these Terms if such delay or failure result from events, circumstances or causes beyond our
                         reasonable control.
+                        {{else}}
+                        لا نتحمل المسؤولية عن أي تأخير في الوفاء أو الإخفاق في الوفاء بأي من التزاماتنا بموجب هذه
+                        الأحكام إذا كان هذا التأخير أو الإخفاق ناجماً عن أحداث أو ظروف أو أسباب خارجة عن سيطرتنا
+                        المعقولة.
+                        {{/is}}
                     </p>
-                    <p>These Terms and any non-contractual obligations arising or matters from it or its performance are
-                        governed by the feral laws of the United Arab Emirates as applied in the Emirate of Abu Dhabi.
+                    <p>
+                        {{#is language "en"}}
+                        These Terms and any non-contractual obligations arising or matters from it or its performance
+                        are governed by the feral laws of the United Arab Emirates as applied in the Emirate of Abu
+                        Dhabi.
                         The courts of Abu Dhabi shall have exclusive jurisdiction.
+                        {{else}}
+                        قد تصبح واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري غير متاحة في أي وقت، ودون أي
+                        إشعار مسبق، بسبب أي أعمال صيانة مخططة و / أو طارئة على النحو الذي يتطلبه البنك ودون أي مسؤولية
+                        تجاهك.
+                        {{/is}}
                     </p>
-                    <p>In the event of conflict between these Terms and:
+                    <p>
+                        {{#is language "en"}}
+                        In the event of conflict between these Terms and:
+                        {{else}}
+                        في حالة وجود تعارض بين هذه الأحكام و:
+                        {{/is}}
+
                     </p>
                     <ul>
-                        <li>Development and Testing Agreement entered into with you Terms of Use (if applicable), the
+                        <li>
+                            {{#is language "en"}}
+                            Development and Testing Agreement entered into with you Terms of Use (if applicable), the
                             Development and Testing Agreement shall prevail;
+                            {{else}}
+                            اتفاقية التطوير والاختبار المبرمة معك وأحكام الاستخدام (إن وجدت)، تنطبق أحكام اتفاقية
+                            التطوير والاختبار؛
+                            {{/is}}
+
                         </li>
-                        <li>the Privacy Notice, the Privacy Notice shall prevail.
+                        <li>
+                            {{#is language "en"}}
+                            the Privacy Notice, the Privacy Notice shall prevail.
+                            {{else}}
+                            إشعار الخصوصية، تنطبق أحكام إشعار الخصوصية.
+                            {{/is}}
+
                         </li>
                     </ul>
 
@@ -519,29 +1060,61 @@ hasPage: false
             <div class="accordion-item__content js-acc-content">
                 <!-- start c-cms-content -->
                 <div class="c-cms-content">
-                    <p>In these Terms, the following definitions apply:</p>
                     <p>
+                        {{#is language "en"}}
+                        In these Terms, the following definitions apply:
+                        {{else}}
+                        تنطبق التعريفات التالية في هذه الأحكام:
+                        {{/is}}
+                    </p>
+                    <p>
+                        {{#is language "en"}}
                         <b>ADCB API Marketplace</b> means the ADCB application programming interface ("API") Marketplace
                         developer portal (including its Sandbox) and all associated available functionality and tools on
                         the site.
+                        {{else}}
+                        <b>"واجهة برمجة التطبيقات API Marketplace </b>
+                        من بنك أبوظبي التجاري" تعني بوابة تطوير واجهة برمجة التطبيقات من بنك أبوظبي التجاري - بما في ذلك
+                        بيئة الاختبار المعزولة الخاصة بها - وكافة الوظائف والأدوات المرتبطة بها على الموقع.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>ADCB Group</b> means any holding company or subsidiary company of Abu Dhabi Commercial Bank
                         PJSC.
+                        {{else}}
+                        <b>"مجموعة بنك أبوظبي التجاري"</b>
+                        تعني أي شركة قابضة أو شركة تابعة لبنك أبوظبي التجاري ش.م.ع
+                        {{/is}}
                     </p>
 
                     <p>
+                        {{#is language "en"}}
                         <b>API Key</b> means the unique set of credentials assigned to your application once your
                         application request is approved by ADCB.
+                        {{else}}
+                        <b>"شفرة واجهة برمجة التطبيقات"</b>
+                        هي مجموعة فريدة من بيانات الاعتماد المخصصة لتطبيقك بمجرد الموافقة على طلب التطبيق الخاص بك من
+                        قبل بنك أبوظبي التجاري.
+                        {{/is}}
                     </p>
 
                     <p>
+
+                        {{#is language "en"}}
                         <b>Applicable Law</b> means any national, federal, emirate or local law, statute, regulation,
                         rule, guidance or other official release of or by any relevant government, any authority,
                         department or agency thereof, or any regulatory organization, in any jurisdiction, anywhere in
                         the world.
+                        {{else}}
+                        <b>"القانون المعمول به" </b>
+                        يعني أي قانون وطني أو اتحادي أو محلي أو خاص بإمارة محددة، أو أي نظام أساسي أو لائحة تنظيمية أو
+                        قاعدة أو توجيه أو إصدار رسمي آخر صادر عن أي حكومة معنية أو أي سلطة أو إدارة أو وكالة أو أي مؤسسة
+                        تنظيمية، في أي ولاية قضائية في أي مكان في العالم.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>Confidential Information</b> means the ADCB’s processes, programs, testing procedures,
                         software design and architecture, computer code, internal documentation, design and function
                         specifications, product requirements, problem reports, analysis and performance information, and
@@ -551,42 +1124,87 @@ hasPage: false
                         known to be considered confidential and proprietary; (iii) received under circumstances
                         reasonably interpreted as imposing an obligation of confidentiality; or (iv) any confidential
                         transaction data.
-
+                        {{else}}
+                        <b>"المعلومات السرية"</b>
+                        تعني العمليات والبرامج وإجراءات الاختبار، وتصميم البرامج وهندستها، ورموز الكمبيوتر، والوثائق
+                        الداخلية، ومواصفات التصميمات والوظائف، ومتطلبات المنتجات، وتقارير المشكلات، وتحليل المعلومات
+                        وأدائها، وأي معلومات أخرى تمنحنا الفرصة للحصول على الميزة التنافسية، أو قد يكون الإفصاح عنها
+                        ضاراً بمصالحنا، أو أي معلومات قد تكون: (أ) محددة بعلامة "سرية" أو "مقيدة" أو "معلومات خاصة
+                        بالملكية" أو أي علامة أخرى مماثلة؛ (ب) معلومات تعتبر بطبيعة الحال سرية وتخضع لملكية خاصة؛ (ج) تم
+                        تلقيها في ظل ظروف فُسرت بشكل معقول على أنها تفرض التزاماً بالسرية ؛ أو (د) أي بيانات معاملات
+                        سرية.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>Development and Testing Agreement</b> means the agreement that we enter into with you in
                         respect of developing and testing the Restricted API’s into production.
-
+                        {{else}}
+                        <b>"اتفاقية التطوير والاختبار"</b>
+                        تعني الاتفاقية التي نبرمها معك فيما يتعلق بتطوير واختبار واجهة برمجة التطبيقات المخصصة في مرحلة
+                        الإنتاج.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>Intellectual Property Rights</b> means any right, title or interest in patents, trademarks,
-                        trade
-                        names, goodwill, registered designs, design rights, semiconductor topography rights, database
+                        trade names, goodwill, registered designs, design rights, semiconductor topography rights,
+                        database
                         rights, copyrights (including in computer software) and other forms of intellectual or
-                        industrial
-                        property (in each case in any part of the world), whether or not registered or registrable for
-                        their
-                        full period of registration with all extensions, renewals and revivals, and including all
+                        industrial property (in each case in any part of the world), whether or not registered or
+                        registrable for
+                        their full period of registration with all extensions, renewals and revivals, and including all
                         applications for registration licenses, permissions and consents or otherwise, inventions,
-                        formulae,
-                        Confidential Information, trade secrets (including know-how or secret processes) and any similar
-                        or
-                        equivalent rights and assets which may now or in the future subsist anywhere in the world.
-
+                        formulae, Confidential Information, trade secrets (including know-how or secret processes) and
+                        any similar
+                        or equivalent rights and assets which may now or in the future subsist anywhere in the world.
+                        {{else}}
+                        <b>"حقوق الملكية الفكرية"</b>
+                        تعني أي حق أو ملكية أو منفعة في براءات الاختراع والعلامات التجارية والأسماء التجارية والشهرة
+                        والتصاميم المسجلة وحقوق التصميم وحقوق طبوغرافيا منتجات أشباه الموصلات وحقوق قواعد البيانات وحقوق
+                        النشر (بما في ذلك برامج الحاسب الآلي) وغيرها من أشكال الملكية الفكرية أو الصناعية (في أي جزء من
+                        العالم)، سواء كانت مسجّلة أو غير مسجلة أو قابلة للتسجيل طوال فترة تسجيلها إلى جانب جميع الملحقات
+                        والتجديدات وإجراءات إعادة التأهيل الخاصة بها، بما في ذلك جميع طلبات تراخيص التسجيل والأذونات
+                        والموافقات والاختراعات والصيغ والمعلومات السرية والأسرار التجارية (بما في ذلك المعرفة العملية أو
+                        العمليات السرية) وأي حقوق وأصول مماثلة أو معادلة قد توجد الآن أو في المستقبل في أي مكان في
+                        العالم.
+                        {{/is}}
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>Restricted API</b> means any API other than an API made available within the ADCB API
                         Marketplace which we have granted you with express authorisation to access on an agreement and
                         terms separate from these Terms.
+                        {{else}}
+                        <b>"واجهة برمجة التطبيقات المحددة"</b>
+                        تعني أي واجهة برمجة تطبيقات بخلاف واجهة برمجة التطبيقات التي تتم إتاحتها على واجهة برمجة
+                        التطبيقات API Marketplace من بنك أبوظبي التجاري والتي منحناك إياها بتفويض صريح للدخول إليها
+                        بموجب اتفاقية وأحكام منفصلة عن هذه الأحكام.
+                        {{/is}}
+
 
                     </p>
                     <p>
+                        {{#is language "en"}}
                         <b>Sandbox</b> means a test environment area, website or portal and related materials,
                         information and resources which we make available to you (which contains dummy data) on the ADCB
                         API Marketplace.
+                        {{else}}
+                        <b>"بيئة الاختبار المعزولة"</b>
+                        تعني أي بيئة اختبار أو موقع إلكتروني أو بوابة إلكترونية أو مواد ومعلومات وموارد ذات صلة نوفرها
+                        لك (والتي تحتوي على بيانات وهمية) على واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي
+                        التجاري.
+                        {{/is}}
+
                     </p>
                     <p>
-                        <b> you</b> means the person who has entered into these Terms.
+
+                        {{#is language "en"}}
+                        <b>you</b> means the person who has entered into these Terms.
+                        {{else}}
+                        <b>"أنت"</b>
+                        تشير إلى الشخص الذي وقّع على هذه الأحكام.
+                        {{/is}}
                     </p>
 
                 </div>

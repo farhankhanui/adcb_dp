@@ -205,6 +205,10 @@
                         text-transform: inherit;
                         font-weight: inherit;
                     }
+
+                    b{
+                        color:#FFF !important; 
+                    }  
                 }
             }
         }
@@ -448,6 +452,12 @@
     line-height: 30px;
     margin-top: 95px;
 
+    p{
+        b{
+            color: #FFF;
+        }
+    }
+
     @media (max-width: 767px) {
         margin-top: 0;
         margin-bottom: 40px;
@@ -477,17 +487,22 @@
                     left: 8px;
                     top: 9px;
                 }
+
+                b{
+                    color: #FFF;
+                }
             }
         }
 
         h2 {
-            
             margin-top: 54px;
             margin-bottom: 18px;
             font-size: 19px; 
         }
 
-        .c-cms-content-table-responsive {
+       
+
+        .c-cms-content-table-scroll {
             margin-bottom: 55px;
 
             td {
@@ -500,13 +515,13 @@
 }
 
 .c-cms-content table thead,
-.c-cms-content-table-responsive thead {
+.c-cms-content-table-scroll thead {
     background-color: #1e262c;
     font-size: 19px;
 }
 
 .c-cms-content table td,
-.c-cms-content-table-responsive td {
+.c-cms-content-table-scroll td {
     background: #273239;
     border-color: #686f74;
     color: #ffffffb3;
@@ -515,9 +530,12 @@
     padding-right: 25px;
     padding-top: 35px;
     padding-bottom: 35px;
+    @media (max-width: 767px) {
+        font-size: 17px;
+    }
 }
 
-.c-cms-content-table-responsive th,
+.c-cms-content-table-scroll th,
 .c-cms-content table th {
     border-color: #686f74;
     font-size: 19px;
@@ -1627,6 +1645,10 @@
     }
 }
 
+.c-cms-content table, .c-cms-content-scrollable, .c-cms-content-table-scroll {
+    overflow: auto!important;
+}
+
 @media (max-width: 767px) {
     .hero-section__content-wrapper {
         margin: 40px auto 10px;
@@ -1795,11 +1817,8 @@
     }
 }
 
-
-
-
 @media (min-width: 768px){
-    .c-cms-content-table-responsive{
+    .c-cms-content-table-scroll{
         th{
             &.first-w{
                 width: 180px;

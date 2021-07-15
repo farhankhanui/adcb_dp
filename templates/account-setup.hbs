@@ -31,17 +31,17 @@ jsencrypt: true
         <div class="form-group">
             <label for="firstName">First Name</label>
             <!-- Require field. And don't change the value of name field. -->
-            <input id="firstName" type="text" name="firstName" placeholder="Your first name" required >
+            <input id="firstName" type="text" name="firstName" placeholder="Your first name" required>
         </div>
         <div class="form-group">
             <label for="lastName">Last Name</label>
             <!-- Require field. And don't change the value of name field. -->
-            <input id="lastName" type="text" name="lastName" placeholder="Your last name" required >
+            <input id="lastName" type="text" name="lastName" placeholder="Your last name" required>
         </div>
         <div class="form-group">
             <label for="userName">Username</label>
             <!-- Require field. And don't change the value of name field. -->
-            <input type="text" name="userName" id="userName" placeholder="Create your username" required >
+            <input type="text" name="userName" id="userName" placeholder="Create your username" required>
             <p class='help-block validation username'>Username is already taken. Please try another one.</p>
         </div>
         <div class="form-group">
@@ -56,13 +56,19 @@ jsencrypt: true
             <!-- Require field. And don't change the value of name field. -->
             <input type="password" id="password" name="password" class="clearbottom" placeholder="Create your password"
                 required>
-            <p class="help-block">Password Required
-            <ul id="passwordPolicies" class="help-block"></ul>
-            </p>
+            <p class="help-block">Password Required</p>
+            <div class="help-block">
+                <ul id="passwordPolicies" class="help-block">
+                    <li>Use a Minimum of 8 characters</li>
+                    <li>Use Lower case and Upper case letters</li>
+                    <li>Use Numbers and at least one special character from !@#$%^&amp;*-</li>
+                </ul>
+            </div>
         </div>
         <div class="form-group">
             <label for="password"> Confirm Password</label>
             <input type="password" name="cnfPassword" placeholder="Confirm your password" required>
+            <div class="help-block"></div>
         </div>
         <div class="form-group">
             <div class="adcb-checkbox">
@@ -71,9 +77,8 @@ jsencrypt: true
                         By ticking this box, I acknowledge that I have read, understood and agree to be bound by the
                         terms and conditions of both the API Marketplace by ADCB - <a
                             href="terms-and-condition.html">Terms of Use</a> and the
-                        <a href="privacy-policy.html">Privacy Notice</a>
-                        <input type="checkbox" id="checkbox00" value="true" required=""
-                            class="o-input o-input__text">
+                        <a href="privacy-notice.html">Privacy Notice</a>
+                        <input type="checkbox" id="checkbox00" value="true" required="" class="o-input o-input__text">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -93,9 +98,3 @@ jsencrypt: true
 
     </form>
 </div>
-
-
-
-
-
-

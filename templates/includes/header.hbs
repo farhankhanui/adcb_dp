@@ -234,7 +234,7 @@
                                 الأحكام والشروط
                                 {{/is}}
                             </a></li>
-                        <li><a href="privacy-policy.html" class="nav-footer-item hidden-sm hidden-xs">
+                        <li><a href="privacy-notice.html" class="nav-footer-item hidden-sm hidden-xs">
                                 {{#is language "en"}}
                                 Privacy Notice
                                 {{else}}
@@ -264,9 +264,14 @@
 
 
 
-        <!-- start o-site-logo -->
-        <a href="index.html" id="_logoHome" class="o-site-logo" data-delay="5" data-anim="true" data-timing=".5"
-            data-easing="ease-out">
+        <!-- start o-site-logo -->  
+        {{#is language "en"}}
+            <a href="https://apimarketplace.adcb.com/en" id="_logoHome" class="o-site-logo" data-delay="5" data-anim="true" data-timing=".5" data-easing="ease-out">
+        {{else}}
+            <a href="https://apimarketplace.adcb.com/ar" id="_logoHome" class="o-site-logo" data-delay="5" data-anim="true" data-timing=".5" data-easing="ease-out">
+        {{/is}}
+        
+        
             <span class="o-site-logo__text large-screen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="272.905" height="34" viewBox="0 0 272.905 34">
                     <g id="Group_3" data-name="Group 3" transform="translate(-758.239 -116.5)">
@@ -364,7 +369,7 @@
                 </svg>
             </span>
         </a>
-        <!-- end o-site-logo -->
+        <!-- end o-site-logo -->   
 
         <!-- start - c-quick-links -->
         <ul class="c-quick-links">

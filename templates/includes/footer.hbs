@@ -12,8 +12,11 @@
         <div class="c-footer-brand">
             <div class="c-footer-brand__logo">
                 <!-- start o-site-logo -->
-                <a href="index.html" class="o-site-logo" data-delay="5" data-anim="false" data-timing=".5"
-                    data-easing="ease-out">
+                {{#is language "en"}}
+                    <a href="https://apimarketplace.adcb.com/en" class="o-site-logo" data-delay="5" data-anim="false" data-timing=".5" data-easing="ease-out">
+                {{else}}
+                    <a href="https://apimarketplace.adcb.com/ar" class="o-site-logo" data-delay="5" data-anim="false" data-timing=".5" data-easing="ease-out">
+                {{/is}}
                     <img src="{{images}}/footer-logo.svg" alt="">
                 </a>
                 <!-- end o-site-logo -->
@@ -226,7 +229,7 @@
                     إخلاء مسؤولية
                     {{/is}}
                 </a></li>
-            <li><a href="privacy-policy.html">
+            <li><a href="privacy-notice.html">
                     {{#is language "en"}}
                     Privacy Notice
                     {{else}}

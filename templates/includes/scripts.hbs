@@ -122,68 +122,7 @@
 	if (_el) {
 		_el.href = _location;
 		var _adcbLogo = document.getElementById("_logoHome");
-		var _adcbFooterlogo = document.getElementById("_logoFooter");
-
-		if (_loc.indexOf("/en") >= 0) {
-			if (_loc.indexOf("islamic/") >= 0) {
-				if (_loc.indexOf("/islamic/personal/") >= 0) {
-					_adcbLogo.href = "/en/islamic/personal";
-					_adcbFooterlogo.href = "/en/islamic/personal";
-				} else if (_loc.indexOf("/islamic/business/") >= 0) {
-					_adcbLogo.href = "/en/islamic/business";
-					_adcbFooterlogo.href = "/en/islamic/business";
-				} else {
-					_adcbLogo.href = "/en/islamic/personal";
-					_adcbFooterlogo.href = "/en/islamic/personal";
-				}
-			} else if (_loc.indexOf("business/") >= 0) {
-				_adcbLogo.href = "/en/business/";
-				_adcbFooterlogo.href = "/en/business/";
-			} else if (_loc.indexOf("private/") >= 0) {
-				_adcbLogo.href = "/en/private/";
-				_adcbFooterlogo.href = "/en/private/";
-			}
-			else if (_loc.indexOf("about/") >= 0) {
-				_adcbLogo.href = "/en/personal/";
-				_adcbFooterlogo.href = "/en/personal/";
-			} else if (_loc.indexOf("unb/") >= 0) {
-				_adcbLogo.href = "/en/unb/";
-				_adcbFooterlogo.href = "/en/unb/";
-			} else {
-				_adcbLogo.href = "/en/";
-				_adcbFooterlogo.href = "/en/";
-			}
-		}
-		if (_loc.indexOf("/ar") >= 0) {
-			if (_loc.indexOf("islamic/") >= 0) {
-
-				if (_loc.indexOf("/islamic/personal/") >= 0) {
-					_adcbLogo.href = "/ar/islamic/personal";
-					_adcbFooterlogo.href = "/ar/islamic/personal";
-				} else if (_loc.indexOf("/islamic/business/") >= 0) {
-					_adcbLogo.href = "/ar/islamic/business";
-					_adcbFooterlogo.href = "/ar/islamic/business";
-				} else {
-					_adcbLogo.href = "/ar/islamic/";
-					_adcbFooterlogo.href = "/ar/islamic/";
-				}
-			} else if (_loc.indexOf("business/") >= 0) {
-				_adcbLogo.href = "/ar/business/";
-				_adcbFooterlogo.href = "/ar/business/";
-			} else if (_loc.indexOf("private/") >= 0) {
-				_adcbLogo.href = "/ar/private/";
-				_adcbFooterlogo.href = "/ar/private/";
-			} else if (_loc.indexOf("about/") >= 0) {
-				_adcbLogo.href = "/ar/personal/";
-				_adcbFooterlogo.href = "/ar/personal/";
-			} else if (_loc.indexOf("unb/") >= 0) {
-				_adcbLogo.href = "/ar/unb/";
-				_adcbFooterlogo.href = "/ar/unb/";
-			} else {
-				_adcbLogo.href = "/ar/";
-				_adcbFooterlogo.href = "/ar/";
-			}
-		}
+		var _adcbFooterlogo = document.getElementById("_logoFooter");	
 	}
 </script>
 
