@@ -503,7 +503,7 @@
        
 
         .c-cms-content-table-scroll {
-            margin-bottom: 55px;
+            margin-bottom:0;
 
             td {
                 &:before {
@@ -1647,6 +1647,7 @@
 
 .c-cms-content table, .c-cms-content-scrollable, .c-cms-content-table-scroll {
     overflow: auto!important;
+    margin-bottom: 12px !important;
 }
 
 @media (max-width: 767px) {
