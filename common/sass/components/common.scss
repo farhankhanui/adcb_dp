@@ -164,10 +164,11 @@
 
 //  Copy gray color
 .c-cms-content ul li,
-.c-cms-content p,
-.o-tabs__tab-nav-link {
+.c-cms-content p{
     color: #ffffffb3 !important;
-
+}
+.o-tabs__tab-nav-link {
+    color: #ffffffb3 ;
 }
 
 .feature-accordion-group {
@@ -1871,6 +1872,9 @@
 
 .features {
     padding-top: 30px;
+    .c-product-feature__list{
+        flex-flow: row nowrap;
+    }
 }
 
 .partner-ship {
@@ -1903,13 +1907,13 @@
     }
 
     &__circle {
-        width     : 316px;
-        position  : absolute;
-        left      : 0;
-        right     : 0;
-        top       : 0;
-        z-index   : -1;
-        margin:0 auto ;   
+        width   : 316px;
+        position: absolute;
+        left    : 0;
+        right   : 0;
+        top     : 0;
+        z-index : -1;
+        margin  : 0 auto;
     }
 
 }
@@ -1941,6 +1945,7 @@
         letter-spacing: -0.3px;
         line-height   : 50px;
         font-size     : 40px;
+        margin-top    : 45px;
 
         strong {
             font-weight: bold;
@@ -1973,16 +1978,28 @@
 
 
 .be-part {
-    position: relative;
+    position  : relative;
+    margin-top: 185px;
+    color     : #FFF;
 
     &__circle {
         top     : -60px;
         position: absolute;
-        left    : 21%;
+        left    : 19%;
+        margin  : 0;
     }
 
-    margin-top: 125px;
-    color     : #FFF;
+    .container,
+    .row,
+    .col {
+        margin-top: 0;
+    }
+
+    .lead-heading {
+        line-height: normal;
+    }
+
+
 
     .partners {
         width   : 50%;
@@ -2000,7 +2017,7 @@
                 display       : block;
                 float         : left;
                 cursor        : pointer;
-                color         : #fff;
+                color         : rgba(255, 255, 255, 0.4);
                 font-size     : 13px;
                 padding       : 16px 40px;
                 border-bottom : 4px solid transparent;
@@ -2012,7 +2029,7 @@
                 text-transform: uppercase;
 
                 &.active {
-                    color              : #ddd;
+                    color              : #fff;
                     position           : relative;
                     border-bottom-color: #ff0000;
                 }
@@ -2055,7 +2072,7 @@
             &__link {
                 color         : rgb(236, 1, 0);
                 font-size     : 15px;
-                font-weight   : 500;
+                font-weight   : bold;
                 letter-spacing: 0.2px;
                 line-height   : 25px;
                 text-transform: none;
@@ -2099,8 +2116,9 @@
 
 
 .creative {
-    padding : 104px 0;
-    position: relative;
+    padding   : 104px 0;
+    position  : relative;
+    margin-top: 53px;
 
     &__circle {
         position: absolute;
@@ -2120,8 +2138,9 @@
         color      : #FFF;
 
         .page-title-small {
-            text-align: left;
-            color     : #ec0100;
+            text-align : left;
+            color      : #ec0100;
+            font-weight: bold;
         }
 
         .o-btn-medium-red {
@@ -2135,6 +2154,8 @@
             letter-spacing: -0.3px;
             line-height   : 50px;
             font-size     : 40px;
+            margin-top    : 45px;
+            margin-bottom : 28px;
 
             strong {
                 font-weight: bold;
@@ -2216,15 +2237,15 @@
         display : flex;
 
         .buttons {
-            font-size    : 16px;
+            font-size    : 17px;
             line-height  : 0;
             padding      : 10px;
             border-radius: 50px;
             color        : rgba(39, 50, 57, .7);
             border       : 1px solid rgba(39, 50, 57, .2);
             transition   : all 400ms cubic-bezier(.19, 1, .22, 1);
-            color        : #fff;
-            border-color : #fff;
+            color        : #d8d8d8;
+            border-color : #d8d8d8;
             margin-left  : 9px;
             margin-right : 9px;
 
@@ -2233,6 +2254,9 @@
                 border-radius: 30px;
                 border       : 1px solid #ec0100;
                 color        : #ec0100;
+            }
+            &::before{
+                font-weight: bold;
             }
 
             &.testi-swiper-button-prev {

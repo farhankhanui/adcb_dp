@@ -9,8 +9,9 @@
         transform : translate(-50%, -50%);
         text-align: center;
         margin-top: 0;
+        z-index   : 1;
 
-        .small-title {   
+        .small-title {
             color         : rgb(236, 1, 0);
             font-size     : 13px;
             font-weight   : bold;
@@ -39,9 +40,9 @@
         }
 
         .o-btn-medium-red {
-          width: auto;
-          text-transform: none;
-          margin-top: 8px;
+            width         : auto;
+            text-transform: none;
+            margin-top    : 8px;
 
 
         }
@@ -51,7 +52,7 @@
         position: absolute;
         top     : 0;
         right   : 0;
-        margin: 0;
+        margin  : 0;
     }
 
     &__lb-circle {
@@ -70,9 +71,6 @@
         position: absolute;
         top     : 167px;
         right   : 97px;
-        margin: 0;
+        margin  : 0;
     }
 }
-
-
-
