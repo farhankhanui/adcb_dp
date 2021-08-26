@@ -1771,7 +1771,7 @@
     &__title {
         color         : #fff;
         font-size     : 35px;
-        font-weight   : 600;
+        font-weight   : normal;
         letter-spacing: -0.2px;
         line-height   : 40px;
 
@@ -2201,7 +2201,7 @@
         transition: padding .5s ease-in-out;
 
         &.swiper-slide-active {
-            padding: 0;
+            padding:30px 0;
 
             .testimonials__item {
                 padding-top   : 80px;

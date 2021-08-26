@@ -34,7 +34,7 @@ var swiper = new Swiper('.featured', {
 
 var swiper = new Swiper(".testimonials-slider", {
   loop: true,
-  slidesPerView: 2.5,
+  slidesPerView: 2.2,
   spaceBetween: 35,
   speed: 500,
   navigation: {
@@ -45,7 +45,7 @@ var swiper = new Swiper(".testimonials-slider", {
 
 var testiSwiper = new Swiper(".testimonials-slider-1", {
   loop: true,
-  slidesPerView: 2.5,
+  slidesPerView: 2.2,
   spaceBetween: 35,
   speed: 500,
   navigation: {
