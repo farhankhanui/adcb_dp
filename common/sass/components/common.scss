@@ -1,6 +1,7 @@
 @import "includes/global";
 @import "includes/froms";
 @import "includes/icons";
+@import "includes/_fonts";
 @import "includes/spotlight";
 @import "includes/_swiper";
 @import "includes/_aos";
@@ -697,6 +698,7 @@
 .o-on-page-tabs {
     .tabs-title {
         margin-bottom: 36px;
+
         @media (max-width: 767px) {
             font-size: calc(23px + 12 * ((100vw - 320px) / 1120));
         }
@@ -1735,9 +1737,10 @@
 }
 
 .mailing-list {
-    background: #161c21;
-    padding: 93px 96px;
+    background    : #161c21;
+    padding       : 93px 96px;
     padding-bottom: 140px;
+
     .container {
         margin-top: 0;
     }
@@ -1770,9 +1773,11 @@
         font-weight   : 600;
         letter-spacing: -0.2px;
         line-height   : 40px;
-         strong{
-             font-weight: 500;
-         }   
+
+        strong {
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
             margin-bottom: 20px;
         }
@@ -1851,14 +1856,15 @@
 }
 
 
-.lead-heading{
-    font-weight: normal;
+.lead-heading {
+    font-weight   : normal;
     font-size     : 50px;
     letter-spacing: -0.3px;
     line-height   : 90px;
     text-align    : center;
-    strong{
-        font-weight: 500;
+
+    strong {
+        font-weight: bold;
     }
 }
 
@@ -1870,7 +1876,7 @@
 .partner-ship {
     position   : relative;
     color      : #FFF;
-    padding-top: 124px;
+    padding-top: 70px;
 
     h4 {
         margin: 0px 0px 18px;
@@ -1885,7 +1891,7 @@
     }
 
     &__text-wrapper {
-        max-width: 830px;
+        max-width: 896px;
         margin   : 0 auto;
         display  : flex;
 
@@ -1897,13 +1903,13 @@
     }
 
     &__circle {
-        position : absolute;
-        left     : 50%;
-        top      : 0;
-        transform: translateX(-50%);
-        z-index  : -1;
-
-
+        width     : 316px;
+        position  : absolute;
+        left      : 0;
+        right     : 0;
+        top       : 0;
+        z-index   : -1;
+        margin:0 auto ;   
     }
 
 }
@@ -1926,7 +1932,7 @@
         &.page-title-small {
             color      : #ec0100;
             font-size  : 13px;
-            font-weight: 500;
+            font-weight: bold;
         }
     }
 
@@ -1937,13 +1943,13 @@
         font-size     : 40px;
 
         strong {
-            font-weight: 500;
+            font-weight: bold;
         }
     }
 
     .o-btn-medium-red {
-        width     : auto;
-        margin-top: 50px;
+        width         : auto;
+        margin-top    : 50px;
         text-transform: none;
     }
 
@@ -2119,8 +2125,8 @@
         }
 
         .o-btn-medium-red {
-            width: auto;
-            margin-top: 50px;
+            width         : auto;
+            margin-top    : 50px;
             text-transform: none;
         }
 
@@ -2131,7 +2137,7 @@
             font-size     : 40px;
 
             strong {
-                font-weight: 500;
+                font-weight: bold;
             }
         }
     }
@@ -2243,8 +2249,3 @@
         top     : 60px;
     }
 }
-
-
-
-
-
