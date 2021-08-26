@@ -27,64 +27,44 @@
 			carouselDir = true;
 		}
 
-		jQuery('.js-testimonials-carousel__wrap').owlCarousel({
-			rtl: carouselDir,
-			{{!-- loop: true, --}}
-		nav: true,
-		navText: ["<div class='o-carousel-button-left icon-next'></div>", "<div class='o-carousel-button icon-next'></div>"],
-		items: 2.1,
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: true,
-		animateOut: 'fadeOut'
 
+		var findbePartSlider = jQuery('.be-part-slider');
+		if (findbePartSlider) {
+			var checkSwitch = jQuery('.be-part-slider #checkSwitch');
+			jQuery(checkSwitch).click(function () {
+				if (jQuery(this).is(":checked")) {
+					jQuery(".be-part-slider #partners-slide").hide();
+					jQuery(".be-part-slider #individuals-slide").show();
+				} else {
+					jQuery(".be-part-slider #partners-slide").show();
+					jQuery(".be-part-slider #individuals-slide").hide();
+				}
+
+			});
+
+		}
+
+		jQuery('.support__form input[name="subject"]').on('click', function () {
+			var email = 'apimarketplace@adcb.com'
+			var emailSubject = jQuery(this).val();
+			jQuery('#emailSupport').attr('href', 'mailto:' + email + '?subject=' + emailSubject);
+		})
+
+
+		jQuery("a.nav-lvl02__link").click(function () {
+			var hash = this.hash;
+			if (hash != "" || hash != null)
+				window.location.reload();
 		});
-	var findbePartSlider = jQuery('.be-part-slider');
-	if (findbePartSlider) {
-		var checkSwitch = jQuery('.be-part-slider #checkSwitch');
-		jQuery(checkSwitch).click(function () {
-			if (jQuery(this).is(":checked")) {
-				jQuery(".be-part-slider #partners-slide").hide();
-				jQuery(".be-part-slider #individuals-slide").show();
-			} else {
-				jQuery(".be-part-slider #partners-slide").show();
-				jQuery(".be-part-slider #individuals-slide").hide();
-			}
-
-		});
-
-	}
-
-	jQuery('.support__form input[name="subject"]').on('click', function () {
-		var email = 'apimarketplace@adcb.com'
-		var emailSubject = jQuery(this).val();
-		jQuery('#emailSupport').attr('href', 'mailto:' + email + '?subject=' + emailSubject);
-	})
-
-
-	jQuery("a.nav-lvl02__link").click(function () {
-		var hash = this.hash;
-		if (hash != "" || hash != null)
-			window.location.reload();
-	});
-
-
-
-
-
-
-
-
-
 	});
 
 </script>
 
 
-<!-- Language switcher script copied form ADCB live site  -->
-
 <script>
+
+	// Language switcher script copied form ADCB live site
+
 	var _loc = window.location.pathname, _location = '';
 
 	if (_loc.indexOf("/en") >= 0) {
@@ -122,7 +102,6 @@
 		var _adcbFooterlogo = document.getElementById("_logoFooter");
 	}
 
-
 	var swiper = new Swiper('.featured', {
 		pagination: '.swiper-pagination',
 		direction: 'horizontal',
@@ -132,7 +111,8 @@
 		mousewheel: true,
 		speed: 500,
 	});
-
+	
+	// Language switcher script copied form ADCB live site
 
 	var swiper = new Swiper(".testimonials-slider", {
 		loop: true,
@@ -219,9 +199,8 @@
 
 	});
 
-    AOS.init();
+	AOS.init();
 
 </script>
 
 
-<!-- Language switcher script copied form ADCB live site  -->
