@@ -18,6 +18,7 @@
 <script type="text/javascript" src="{{filesDirectory}}/js/toolkit.js"></script>
 <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.js"></script>
 <script type="text/javascript" src="{{filesDirectory}}/js/aos.js"></script>
+<script type="text/javascript" src="{{filesDirectory}}/js/custom.js"></script>
 <script>
 	// A $( document ).ready() block.
 	jQuery(document).ready(function () {
@@ -56,6 +57,8 @@
 			if (hash != "" || hash != null)
 				window.location.reload();
 		});
+
+
 	});
 
 </script>
@@ -111,7 +114,7 @@
 		mousewheel: true,
 		speed: 500,
 	});
-	
+
 	// Language switcher script copied form ADCB live site
 
 	var swiper = new Swiper(".testimonials-slider", {
@@ -202,5 +205,3 @@
 	AOS.init();
 
 </script>
-
-
