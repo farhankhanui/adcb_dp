@@ -1,0 +1,40 @@
+ <form id="registration-form" class="c-leads__form-signUp">
+     <div class="form-group">
+         <label for="user-email">Email</label>
+         <!-- Require field. And don't change the value of name field. -->
+         <input type="text" id="user-email" name="user-email" placeholder="e.g. name@email.com"
+             required>
+         <p class="help-block signup validation">Maximum email length is 254 characters.</p>
+     </div>
+     <div class="form-group">
+         <label for="user-confirm-email">Confirm Email</label>
+         <!-- Require field. And don't change the value of name field. -->
+         <input type="text" id="user-confirm-email" name="user-confirm-email"
+             placeholder="e.g. name@email.com" required>
+         <p class="help-block signup validation">Maximum email length is 254 characters.</p>
+     </div>
+     <div class="form-group">
+         <label for="organization-name">Organisation Name</label>
+         <!--Below input is optional. If using this filed than don't change the value of name field. --
+         <input class="input-block parsley-validated" type="text" name="organization-name"
+             id="organization-name" placeholder="Your company">
+         {{!-- <p class="help-block signup validation">Error message</p> --}}
+         <p class="help-block validation organization" style="display: none;">Organization name
+             is already taken</p>
+     </div>
+     <div class="form-group">
+         <label for="OrganizationDescription">Organisation Website Link</label>
+         <!--Below input is optional. If using this filed than don't change the value of name field. --
+         <input type="text" id="OrganizationDescription" name="OrganizationDescription"
+             placeholder="Your company's website">
+         <p class="help-block signup validation">Error message</p>
+     </div>
+     <div class="form-group">
+         <p class="help-block global error validation signUp">*Form error will come here as a
+             statement </p>
+     </div>
+     <div class="form-btn-wrapper">
+         <button type="submit"
+             class="btn btn-primary fw-btn registration-form-save-button">Register Now</button>
+     </div>
+ </form>

@@ -26,6 +26,10 @@ form {
         font-size: 19px;
         padding: 19px 41px;
         margin: 19px 0 0;
+        &:disabled{
+            opacity: .6;
+        }
+
         &.btn-x250{
             min-width: 250px;
         }

@@ -1,6 +1,3 @@
-<script type="text/javascript" src="{{filesDirectory}}/js/app.min.js"></script>
-
-
 <!-- Don't remove below js libraries. -->
 <!-- toolkit scripts -->
 
@@ -19,8 +16,8 @@
 
 <script type="text/javascript" src="{{filesDirectory}}/js/commons.js"></script>
 <script type="text/javascript" src="{{filesDirectory}}/js/toolkit.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" crossorigin="anonymous"
-	referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.js"></script>
+<script type="text/javascript" src="{{filesDirectory}}/js/aos.js"></script>
 <script>
 	// A $( document ).ready() block.
 	jQuery(document).ready(function () {
@@ -32,45 +29,45 @@
 
 		jQuery('.js-testimonials-carousel__wrap').owlCarousel({
 			rtl: carouselDir,
-			loop: true,
-			nav: true,
-			navText: ["<div class='o-carousel-button-left icon-next'></div>", "<div class='o-carousel-button icon-next'></div>"],
-			items: 1,
-			dots: false,
-			autoplay: true,
-			autoplayTimeout: 5000,
-			autoplayHoverPause: true,
-			animateOut: 'fadeOut'
+			{{!-- loop: true, --}}
+		nav: true,
+		navText: ["<div class='o-carousel-button-left icon-next'></div>", "<div class='o-carousel-button icon-next'></div>"],
+		items: 2.1,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		animateOut: 'fadeOut'
 
 		});
-		var findbePartSlider = jQuery('.be-part-slider');
-		if (findbePartSlider) {
-			var checkSwitch = jQuery('.be-part-slider #checkSwitch');
-			jQuery(checkSwitch).click(function () {
-				if (jQuery(this).is(":checked")) {
-					jQuery(".be-part-slider #partners-slide").hide();
-					jQuery(".be-part-slider #individuals-slide").show();
-				} else {
-					jQuery(".be-part-slider #partners-slide").show();
-					jQuery(".be-part-slider #individuals-slide").hide();
-				}
+	var findbePartSlider = jQuery('.be-part-slider');
+	if (findbePartSlider) {
+		var checkSwitch = jQuery('.be-part-slider #checkSwitch');
+		jQuery(checkSwitch).click(function () {
+			if (jQuery(this).is(":checked")) {
+				jQuery(".be-part-slider #partners-slide").hide();
+				jQuery(".be-part-slider #individuals-slide").show();
+			} else {
+				jQuery(".be-part-slider #partners-slide").show();
+				jQuery(".be-part-slider #individuals-slide").hide();
+			}
 
-			});
-
-		}
-
-		jQuery('.support__form input[name="subject"]').on('click', function () {
-			var email = 'apimarketplace@adcb.com'
-			var emailSubject = jQuery(this).val();
-			jQuery('#emailSupport').attr('href', 'mailto:' + email + '?subject=' + emailSubject);
-		})
-
-
-		jQuery("a.nav-lvl02__link").click(function () {
-			var hash = this.hash;
-			if (hash != "" || hash != null)
-				window.location.reload();
 		});
+
+	}
+
+	jQuery('.support__form input[name="subject"]').on('click', function () {
+		var email = 'apimarketplace@adcb.com'
+		var emailSubject = jQuery(this).val();
+		jQuery('#emailSupport').attr('href', 'mailto:' + email + '?subject=' + emailSubject);
+	})
+
+
+	jQuery("a.nav-lvl02__link").click(function () {
+		var hash = this.hash;
+		if (hash != "" || hash != null)
+			window.location.reload();
+	});
 
 
 
@@ -122,8 +119,108 @@
 	if (_el) {
 		_el.href = _location;
 		var _adcbLogo = document.getElementById("_logoHome");
-		var _adcbFooterlogo = document.getElementById("_logoFooter");	
+		var _adcbFooterlogo = document.getElementById("_logoFooter");
 	}
+
+
+	var swiper = new Swiper('.featured', {
+		pagination: '.swiper-pagination',
+		direction: 'horizontal',
+		slidesPerView: 6,
+		paginationClickable: true,
+		spaceBetween: 30,
+		mousewheel: true,
+		speed: 500,
+	});
+
+
+	var swiper = new Swiper(".testimonials-slider", {
+		loop: true,
+		slidesPerView: 2.5,
+		spaceBetween: 35,
+		speed: 500,
+		navigation: {
+			nextEl: ".testi-swiper-button-next.fst",
+			prevEl: ".testi-swiper-button-prev.fst",
+		},
+	});
+
+	var testiSwiper = new Swiper(".testimonials-slider-1", {
+		loop: true,
+		slidesPerView: 2.5,
+		spaceBetween: 35,
+		speed: 500,
+		navigation: {
+			nextEl: ".testi-swiper-button-next.snd",
+			prevEl: ".testi-swiper-button-prev.snd",
+		},
+	})
+
+
+
+	//Swiper update
+	$('.o-tabs__tab-nav-link').on('click', function () {
+		setTimeout(function () {
+			testiSwiper.update();
+		}, 100);
+
+	});
+
+	// Tabs 
+	$(function () {
+		$.FindContainer = function () {
+			$('.tab-content>div').each(function findcontent() {
+				var newindex = $('.activetab').index();
+				var otherindex = $(this).index();
+				var substractindex = otherindex - newindex;
+				var currentwidth = $('.partners').width();
+				var newpositions = substractindex * currentwidth;
+				$(this).animate({
+					'left': newpositions
+				});
+			});
+		};
+		$.FindId = function () {
+			$('.tab-content>div').each(function () {
+				if ($(this).attr('id') == $('.active').attr('data-Id')) {
+					$('.tab-content>div').removeClass('activetab');
+					$(this).addClass('activetab');
+				}
+			});
+		};
+		$('.tab-buttons>span').first().addClass('active');
+
+		$('.tab-content>div').each(function () {
+			var activeid = $('.active').attr('data-Id');
+			console.log(activeid);
+			if ($(this).attr('id') == activeid) {
+				$(this).addClass('activetab');
+			}
+			var currentheight = $('.activetab').height();
+			var currentwidth = $('.partners').width();
+			var currentindex = $(this).index();
+			var currentposition = currentindex * currentwidth;
+			$(this).css({
+				'left': currentposition,
+				'width': currentwidth - 40,
+
+			});
+			$(this).attr('data-position', currentposition);
+
+		});
+
+		$('.tab-buttons>span').click(function () {
+			$('.tab-buttons>span').removeClass('active');
+			$(this).addClass('active');
+			var currentid = $('.active').attr('id');
+			$.FindId();
+			$.FindContainer();
+		});
+
+	});
+
+    AOS.init();
+
 </script>
 
 

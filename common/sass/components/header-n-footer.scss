@@ -399,6 +399,14 @@
           @media (min-width: 1024px) {
             margin-right: 15px;
           }
+          a{
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
 
         @media (max-width: 768px) {
