@@ -20,9 +20,9 @@ function counterAnimation() {
   });
 }
 
-var swiper = new Swiper('.featured', {
-  pagination: '.swiper-pagination',
-  direction: 'horizontal',
+var swiper = new Swiper(".featured", {
+  pagination: ".swiper-pagination",
+  direction: "horizontal",
   slidesPerView: 6,
   paginationClickable: true,
   spaceBetween: 30,
@@ -52,86 +52,84 @@ var testiSwiper = new Swiper(".testimonials-slider-1", {
     nextEl: ".testi-swiper-button-next.snd",
     prevEl: ".testi-swiper-button-prev.snd",
   },
-})
-
-
-
-//Swiper update
-$('.o-tabs__tab-nav-link').on('click', function () {
-  setTimeout(function () {
-    testiSwiper.update();
-  }, 100);
-
 });
 
-// Tabs 
+const swiperCounter = new Swiper(".c-product-feature__list", {
+  freeMode: true,
+  slidesPerView: 6,
+  centeredSlides: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+});
+
+//Swiper update
+$(".o-tabs__tab-nav-link").on("click", function () {
+  setTimeout(function () {
+    testiSwiper.update();
+  }, 5);
+});
+
+// Tabs
 $(function () {
   $.FindContainer = function () {
-    $('.tab-content>div').each(function findcontent() {
-      var newindex = $('.activetab').index();
+    $(".tab-content>div").each(function findcontent() {
+      var newindex = $(".activetab").index();
       var otherindex = $(this).index();
       var substractindex = otherindex - newindex;
-      var currentwidth = $('.partners').width();
+      var currentwidth = $(".partners").width();
       var newpositions = substractindex * currentwidth;
       $(this).animate({
-        'left': newpositions
+        left: newpositions,
       });
     });
   };
   $.FindId = function () {
-    $('.tab-content>div').each(function () {
-      if ($(this).attr('id') == $('.active').attr('data-Id')) {
-        $('.tab-content>div').removeClass('activetab');
-        $(this).addClass('activetab');
+    $(".tab-content>div").each(function () {
+      if ($(this).attr("id") == $(".active").attr("data-Id")) {
+        $(".tab-content>div").removeClass("activetab");
+        $(this).addClass("activetab");
       }
     });
   };
-  $('.tab-buttons>span').first().addClass('active');
+  $(".tab-buttons>span").first().addClass("active");
 
-  $('.tab-content>div').each(function () {
-    var activeid = $('.active').attr('data-Id');
-    
-    if ($(this).attr('id') == activeid) {
-      $(this).addClass('activetab');
+  $(".tab-content>div").each(function () {
+    var activeid = $(".active").attr("data-Id");
+
+    if ($(this).attr("id") == activeid) {
+      $(this).addClass("activetab");
     }
-    var currentheight = $('.activetab').height();
-    var currentwidth = $('.partners').width();
+    var currentheight = $(".activetab").height();
+    var currentwidth = $(".partners").width();
     var currentindex = $(this).index();
     var currentposition = currentindex * currentwidth;
     $(this).css({
-      'left': currentposition,
-      'width': currentwidth - 40,
-
+      left: currentposition,
+      width: currentwidth - 40,
     });
-    $(this).attr('data-position', currentposition);
-
+    $(this).attr("data-position", currentposition);
   });
 
-  $('.tab-buttons>span').click(function () {
-    $('.tab-buttons>span').removeClass('active');
-    $(this).addClass('active');
-    var currentid = $('.active').attr('id');
+  $(".tab-buttons>span").click(function () {
+    $(".tab-buttons>span").removeClass("active");
+    $(this).addClass("active");
+    var currentid = $(".active").attr("id");
     $.FindId();
     $.FindContainer();
   });
-  
 
-
-  $('.tab-content > #partner').on('click', function(){
-    $( "span[data-Id='partner']" ).trigger( "click" );
+  $(".tab-content > #partner").on("click", function () {
+    $("span[data-Id='partner']").trigger("click");
   });
 
-  $('.tab-content > #individual').on('click', function(){
-    $( "span[data-Id='individual']" ).trigger( "click" );
+  $(".tab-content > #individual").on("click", function () {
+    $("span[data-Id='individual']").trigger("click");
   });
-
-
-
 });
 
 AOS.init();
 
-
 $(document).ready(function () {
-  counterAnimation();
+  // counterAnimation();
 });
