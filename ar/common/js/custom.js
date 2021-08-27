@@ -90,7 +90,7 @@ $(function () {
 
   $('.tab-content>div').each(function () {
     var activeid = $('.active').attr('data-Id');
-    
+    console.log(activeid);
     if ($(this).attr('id') == activeid) {
       $(this).addClass('activetab');
     }
@@ -114,18 +114,6 @@ $(function () {
     $.FindId();
     $.FindContainer();
   });
-  
-
-
-  $('.tab-content > #partner').on('click', function(){
-    $( "span[data-Id='partner']" ).trigger( "click" );
-  });
-
-  $('.tab-content > #individual').on('click', function(){
-    $( "span[data-Id='individual']" ).trigger( "click" );
-  });
-
-
 
 });
 
