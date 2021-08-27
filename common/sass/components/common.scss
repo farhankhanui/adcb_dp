@@ -1986,7 +1986,11 @@
         top     : -60px;
         position: absolute;
         left    : 19%;
+        @media (max-width: 1440px) {
+            left: 9%;
+        }
         margin  : 0;
+
     }
 
     .container,
@@ -2078,6 +2082,10 @@
                 text-transform: none;
                 position      : relative;
                 opacity       : 0;
+                &:hover{
+                    text-decoration: underline;
+                }
+
 
                 &::after {
                     content         : url();
