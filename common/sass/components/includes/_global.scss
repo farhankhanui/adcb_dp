@@ -1,7 +1,7 @@
 body {
-  // old bg background: #192126; 
+  // old bg background: #192126;
   background: #161c21;
-  font-family:'proxima_nova'#{"/*rtl:Tajawal*/"};
+  font-family: "proxima_nova" #{"/*rtl:Tajawal*/"};
 }
 
 h1,
@@ -9,12 +9,12 @@ h2 {
   font-size: 40px;
 }
 
-P{
-  a{
+P {
+  a {
     font-size: inherit;
     text-transform: inherit;
     letter-spacing: inherit;
-    &:hover{
+    &:hover {
       text-decoration: underline;
       color: #ec0100;
     }
@@ -24,8 +24,7 @@ P{
 .site-wrap {
   margin: 0;
 
-  .site-header+div {
+  .site-header + div {
     margin-top: 90px;
   }
-
-} 
+}

@@ -3,7 +3,7 @@ function counterAnimation() {
   var elemOffset = elem.offset().top;
 
   var windowTop;
-  var limit = 300;
+  var limit = 500;
 
   function parallax() {
     elem.css({
@@ -13,7 +13,7 @@ function counterAnimation() {
       transform: "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
     });
   }
-
+  console.log(windowTop / limit);
   $(window).on("scroll", function () {
     windowTop = $(window).scrollTop() - elemOffset + 400;
     window.requestAnimationFrame(parallax);
@@ -33,8 +33,8 @@ var swiper = new Swiper(".featured", {
 // Language switcher script copied form ADCB live site
 
 var swiper = new Swiper(".testimonials-slider", {
-  loop: true,
-  slidesPerView: 2.2,
+  // loop: true,
+  slidesPerView: "auto",
   spaceBetween: 35,
   speed: 500,
   navigation: {
@@ -43,16 +43,15 @@ var swiper = new Swiper(".testimonials-slider", {
   },
 });
 
-var testiSwiper = new Swiper(".testimonials-slider-1", {
-  loop: true,
-  slidesPerView: 2.2,
-  spaceBetween: 35,
-  speed: 500,
-  navigation: {
-    nextEl: ".testi-swiper-button-next.snd",
-    prevEl: ".testi-swiper-button-prev.snd",
-  },
-});
+// var testiSwiper = new Swiper(".testimonials-slider-1", {
+//   slidesPerView: 'auto',
+//   spaceBetween: 35,
+//   speed: 500,
+//   navigation: {
+//     nextEl: ".testi-swiper-button-next.snd",
+//     prevEl: ".testi-swiper-button-prev.snd",
+//   },
+// });
 
 const swiperCounter = new Swiper(".c-product-feature__list", {
   freeMode: true,
