@@ -35,7 +35,7 @@ var swiper = new Swiper(".featured", {
 var swiper = new Swiper(".testimonials-slider", {
   // loop: true,
   slidesPerView: "auto",
-  spaceBetween: 35,
+  spaceBetween: 0,
   speed: 500,
   navigation: {
     nextEl: ".testi-swiper-button-next.fst",
@@ -127,7 +127,9 @@ $(function () {
   });
 });
 
-AOS.init();
+AOS.init({
+  once: true, 
+});
 
 $(document).ready(function () {
   // counterAnimation();
