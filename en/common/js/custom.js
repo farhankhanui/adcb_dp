@@ -74,6 +74,11 @@ $(function () {
   $.FindContainer = function () {
     $(".tab-content>div").each(function findcontent() {
       var newindex = $(".activetab").index();
+      var newheight = $('.activetab').height();
+    //   $('.tab-content').animate({
+    //     'height': newheight+20
+    // }, 100);
+      $('.tab-content').css('height', newheight+20);
       var otherindex = $(this).index();
       var substractindex = otherindex - newindex;
       var currentwidth = $(".partners").width();
@@ -108,6 +113,7 @@ $(function () {
       width: currentwidth - 40,
     });
     $(this).attr("data-position", currentposition);
+    $('.tab-content').css('height', currentheight+20);
   });
 
   $(".tab-buttons>span").click(function () {

@@ -2032,8 +2032,10 @@
 .be-part {
     position: relative;
     margin-top: 185px;
+    margin-bottom: 280px;
     @media (max-width: 768px) {  
         margin-top: 64px;
+        margin-bottom: 120px;
      }
     
     color: #fff;
@@ -2060,7 +2062,7 @@
     .lead-heading {
         line-height: normal;
         @media (max-width: 768px) {
-            padding: 0 20%;
+            padding: 0 15%;
         }
     }
 
@@ -2126,23 +2128,25 @@
 
         .tab-content {
             position: relative;
-            height: 600px;
-            margin-top: 80px;
+            // height: 600px;   
+            // padding-top: 80px; 
             @media (max-width: 768px) {
-                margin-top: 60px;
+            //  padding-top: 70px;
             }
 
             > div {
                 position: absolute;
                 cursor: pointer;
-                width: 100% !important;
                 padding-left: 24px;
                 padding-right: 24px;
+                @media (max-width: 768px) {
+                    width: 100% !important;
+                }
             }
         }
 
         .partner {
-            max-width: 670px;
+            max-width: 670px;   
             margin: 0 auto;
 
             &__title {
@@ -2202,9 +2206,13 @@
             svg {
                 width: 100px;
                 height: 100px;
+                 margin-top: 80px;             
                 @media (max-width: 768px) {
                     width: 90px;
                     height: 90px;
+                    margin: 0 auto;
+                    margin-top: 70px;
+                    display: block;
                 }
                 path {
                     stroke: #44494d;
@@ -2240,6 +2248,12 @@
     padding: 104px 0;
     position: relative;
     margin-top: 53px;
+    @media (max-width: 768px) { 
+        margin-top: 0;
+        padding-top: 370px;
+        padding-bottom: 40px;   
+
+     }
 
     &__circle {
         position: absolute;
@@ -2249,13 +2263,29 @@
         height: 626px;
         border-radius: 100%;
         top: 40px;
+        @media (max-width: 768px) { 
+            top: 0;   
+        }      
         background-color: #192025;
+        @media (max-width: 768px) {
+            width: 326px;
+            height: 326px;
+            left: -22px;
+        }
     }
 
     &__img {
         position: absolute;
         left: 53px;
         top: 88px;
+        @media (max-width: 768px) {
+            max-width: 290px;
+            left: 24px;
+            top: 22px;
+            img{
+                max-width: 100%;
+            }
+        }
     }
 
     &__text-wrap {
@@ -2300,8 +2330,8 @@
     color: #fff;
     @media (min-width: 1024px) {
         .lead-heading,
-        .o-comp o-tabs{
-            margin-left: -96px;
+        .o-comp.o-tabs{
+            margin-left: -96px; 
         }
     }
 
@@ -2313,10 +2343,16 @@
         .art-image {
             width: 30%;
             margin-top: 110px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
 
         .o-tabs__tab-content {
             width: 70%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
             
         }
     }
@@ -2399,7 +2435,7 @@
             &:hover {
                 padding: 10px 20px !important;
                 border-radius: 30px;
-                border: 1px solid #ec0100;
+                border: 1px solid #ec0100;        
                 color: #ec0100;
             }
             &::before {
@@ -2418,13 +2454,14 @@
         position: absolute;
         right: 0;
         top: 60px;
+        // @media (max-width: 768px) {
+        //     display: none;
+        // }
     }
 }
 
 .swiper-container-free-mode {
     .swiper-wrapper {
         transition: transform 1s ease-in-out !important;
-    }
+    }  
 }
-
-
