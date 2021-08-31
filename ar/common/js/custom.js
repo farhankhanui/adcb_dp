@@ -35,9 +35,9 @@ var swiper = new Swiper('.featured', {
 var swiper = new Swiper(".testimonials-slider", {
   loop: true,
   slidesPerView: 2.2,
-  spaceBetween: 35,
+  spaceBetween: 0,   
   speed: 500,
-  navigation: {
+  navigation: {   
     nextEl: ".testi-swiper-button-next.fst",
     prevEl: ".testi-swiper-button-prev.fst",
   },
@@ -46,14 +46,14 @@ var swiper = new Swiper(".testimonials-slider", {
 var testiSwiper = new Swiper(".testimonials-slider-1", {
   loop: true,
   slidesPerView: 2.2,
-  spaceBetween: 35,
+  spaceBetween: 0,
   speed: 500,
   navigation: {
     nextEl: ".testi-swiper-button-next.snd",
     prevEl: ".testi-swiper-button-prev.snd",
   },
 })
-
+   
 
 
 //Swiper update

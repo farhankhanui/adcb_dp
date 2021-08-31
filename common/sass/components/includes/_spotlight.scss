@@ -1,7 +1,9 @@
 .spotlight {
     position: relative;
     min-height: 900px;
-
+    @media (max-width: 768px) {
+        min-height: auto;
+    }
     &__caption {
         position: absolute;
         top: 50%;
@@ -10,6 +12,11 @@
         text-align: center;
         margin-top: 0;
         z-index: 1;
+        @media (max-width: 768px) {
+            position: static;
+            transform: translate(0,0);
+            margin-top: 85px;
+        }
 
         .small-title {
             color: rgb(236, 1, 0);
@@ -33,7 +40,10 @@
             line-height: 90px;
             text-align: center;
             margin: 30px 0;
-
+            @media (max-width: 768px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
             span {
             }
         }
@@ -50,18 +60,47 @@
         top: 0;
         right: 0;
         margin: 0;
+        width: 520px;
+        height: 520px;
+        background-color:transparent;
+        border: solid 90px #192025;
+        border-radius:100%;
+        box-shadow: 0 0 150px #161b1d;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__lb-circle {
         position: absolute;
-        bottom: -203px;
-        left: 0;
+        bottom: 0px;
+        left: -136px;
+        width: 643px;
+        height: 643px;
+        background: #192025;
+        box-shadow: 0 0 150px #161b1d; 
+        border-radius: 100%;  
+        @media (max-width: 768px) {
+            position: static;
+            width: 416px;
+            height: 416px;
+            margin-left: -50px;
+            margin-top: 20px;
+        }     
     }
 
     &__lb-Illustration {
         position: absolute;
         bottom: 0;
         left: 0;
+        @media (max-width: 768px) {
+            bottom: auto;
+            top: 107px;
+            max-width: 356px;
+            img{
+                max-width: 100%;
+            }
+        }
     }
 
     &__tr-Illustration {
@@ -69,5 +108,8 @@
         top: 167px;
         right: 97px;
         margin: 0;
+        @media (max-width: 768px) {
+            display: none;  
+            }
     }
 }
