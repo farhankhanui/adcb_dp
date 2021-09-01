@@ -34,6 +34,7 @@ var swiper = new Swiper(".featured", {
 
 var swiper = new Swiper(".testimonials-slider", {
   // loop: true,
+  // autoHeight: true,
   slidesPerView: "auto",
   spaceBetween: 0,
   speed: 500,
@@ -63,11 +64,7 @@ const swiperCounter = new Swiper(".c-product-feature__list", {
 });
 
 //Swiper update
-$(".o-tabs__tab-nav-link").on("click", function () {
-  setTimeout(function () {
-    testiSwiper.update();
-  }, 5);
-});
+//  
 
 // Tabs
 $(function () {
@@ -131,11 +128,38 @@ $(function () {
   $(".tab-content > #individual").on("click", function () {
     $("span[data-Id='individual']").trigger("click");
   });
+
+  $(window).resize(function() {
+    
+    if($(window).width() <= 768) {    
+      $('.testimonials .art-image').insertAfter('.testimonials__circle');
+    } else {
+      $('.testimonials .art-image').insertBefore('.o-tabs__tab-content');
+    }
+}).resize(); // This will simulate a resize to trigger the initial run.
+
+
 });
 
 AOS.init({
   once: true, 
 });
+
+
+$(window).scroll(function(){
+  var w = $(window).scrollTop();
+  var f = "translateX(" + -w*1 + "px)";     
+  console.log(f);
+  $('.cards.features').css({
+    transform: f
+  });              
+});
+
+
+
+
+
+
 
 $(document).ready(function () {
   // counterAnimation();
