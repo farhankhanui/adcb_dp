@@ -54,28 +54,28 @@ var swiper = new Swiper(".testimonials-slider", {
 //   },
 // });
 
-const swiperCounter = new Swiper(".c-product-feature__list", {
+/* const swiperCounter = new Swiper(".c-product-feature__list", {
   freeMode: true,
   slidesPerView: 6,
   centeredSlides: true,
   mousewheel: {
     releaseOnEdges: true,
   },
-});
+}); */
 
 //Swiper update
-//  
+//
 
 // Tabs
 $(function () {
   $.FindContainer = function () {
     $(".tab-content>div").each(function findcontent() {
       var newindex = $(".activetab").index();
-      var newheight = $('.activetab').height();
-    //   $('.tab-content').animate({
-    //     'height': newheight+20
-    // }, 100);
-      $('.tab-content').css('height', newheight+20);
+      var newheight = $(".activetab").height();
+      //   $('.tab-content').animate({
+      //     'height': newheight+20
+      // }, 100);
+      $(".tab-content").css("height", newheight + 20);
       var otherindex = $(this).index();
       var substractindex = otherindex - newindex;
       var currentwidth = $(".partners").width();
@@ -110,7 +110,7 @@ $(function () {
       width: currentwidth - 40,
     });
     $(this).attr("data-position", currentposition);
-    $('.tab-content').css('height', currentheight+20);
+    $(".tab-content").css("height", currentheight + 20);
   });
 
   $(".tab-buttons>span").click(function () {
@@ -129,37 +129,29 @@ $(function () {
     $("span[data-Id='individual']").trigger("click");
   });
 
-  $(window).resize(function() {
-    
-    if($(window).width() <= 768) {    
-      $('.testimonials .art-image').insertAfter('.testimonials__circle');
-    } else {
-      $('.testimonials .art-image').insertBefore('.o-tabs__tab-content');
-    }
-}).resize(); // This will simulate a resize to trigger the initial run.
-
-
+  $(window)
+    .resize(function () {
+      if ($(window).width() <= 768) {
+        $(".testimonials .art-image").insertAfter(".testimonials__circle");
+      } else {
+        $(".testimonials .art-image").insertBefore(".o-tabs__tab-content");
+      }
+    })
+    .resize(); // This will simulate a resize to trigger the initial run.
 });
 
 AOS.init({
-  once: true, 
+  once: true,
 });
 
-
-$(window).scroll(function(){
+$(window).scroll(function () {
   var w = $(window).scrollTop();
-  var f = "translateX(" + -w*1 + "px)";     
+  var f = "translateX(" + -w * 1 + "px)";
   console.log(f);
-  $('.cards.features').css({
-    transform: f
-  });              
+  $(".cards.features").css({
+    transform: f,
+  });
 });
-
-
-
-
-
-
 
 $(document).ready(function () {
   // counterAnimation();
