@@ -144,15 +144,6 @@ AOS.init({
   once: true,
 });
 
-$(window).scroll(function () {
-  var w = $(window).scrollTop();
-  var f = "translateX(" + -w * 1 + "px)";
-  console.log(f);
-  $(".cards.features").css({
-    transform: f,
-  });
-});
-
 $(document).ready(function () {
   // counterAnimation();
 });

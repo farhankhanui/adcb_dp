@@ -3,6 +3,8 @@ $(document).ready(function () {
 
   if (mql.matches) {
     var rightItem = document.getElementById("item1");
+    console.clear();
+    console.log("test");
     (function () {
       var throttle = function (type, name, obj) {
         var obj = obj || window;
