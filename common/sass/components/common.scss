@@ -2565,6 +2565,9 @@
 
     .c-product-feature__list {
         white-space: nowrap;
+        @media (max-width: 1024px) {
+            justify-content: flex-start;
+        }
     }
 
     .horizontal-scroll--list {
