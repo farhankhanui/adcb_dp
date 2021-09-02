@@ -1,40 +1,14 @@
-function counterAnimation() {
-  var elem = $(".horizontal-scroll--list");
-  var elemOffset = elem.offset().top;
 
-  var windowTop;
-  var limit = 500;
-
-  function parallax() {
-    elem.css({
-      "-webkit-transform":
-        "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
-      "-ms-transform": "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
-      transform: "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
-    });
-  }
-  console.log(windowTop / limit);
-  $(window).on("scroll", function () {
-    windowTop = $(window).scrollTop() - elemOffset + 400;
-    window.requestAnimationFrame(parallax);
-  });
-}
-
-var swiper = new Swiper(".featured", {
-  pagination: ".swiper-pagination",
-  direction: "horizontal",
-  slidesPerView: 6,
-  paginationClickable: true,
-  spaceBetween: 30,
-  mousewheel: true,
-  speed: 500,
-});
 
 // Language switcher script copied form ADCB live site
+ var autoHeight = false;
+if ($(window).width() <= 768) {
+    autoHeight = true
+}
 
 var swiper = new Swiper(".testimonials-slider", {
-  // loop: true,
-  // autoHeight: true,
+  loop: true,
+  autoHeight: autoHeight,
   slidesPerView: "auto",
   spaceBetween: 0,
   speed: 500,
@@ -42,29 +16,9 @@ var swiper = new Swiper(".testimonials-slider", {
     nextEl: ".testi-swiper-button-next.fst",
     prevEl: ".testi-swiper-button-prev.fst",
   },
+ 
 });
 
-// var testiSwiper = new Swiper(".testimonials-slider-1", {
-//   slidesPerView: 'auto',
-//   spaceBetween: 35,
-//   speed: 500,
-//   navigation: {
-//     nextEl: ".testi-swiper-button-next.snd",
-//     prevEl: ".testi-swiper-button-prev.snd",
-//   },
-// });
-
-/* const swiperCounter = new Swiper(".c-product-feature__list", {
-  freeMode: true,
-  slidesPerView: 6,
-  centeredSlides: true,
-  mousewheel: {
-    releaseOnEdges: true,
-  },
-}); */
-
-//Swiper update
-//
 
 // Tabs
 $(function () {
@@ -129,7 +83,10 @@ $(function () {
     $("span[data-Id='individual']").trigger("click");
   });
 
-  $(window)
+});
+
+
+$(window)
     .resize(function () {
       if ($(window).width() <= 768) {
         $(".testimonials .art-image").insertAfter(".testimonials__circle");
@@ -138,12 +95,9 @@ $(function () {
       }
     })
     .resize(); // This will simulate a resize to trigger the initial run.
-});
 
 AOS.init({
   once: true,
 });
 
-$(document).ready(function () {
-  // counterAnimation();
-});
+

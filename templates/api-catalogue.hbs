@@ -25,7 +25,7 @@ breadcumb2Has: false
             </p>
             <h1>
                 {{#is language "en"}}
-                Discover the list of APIs available for you at this time with ADCB
+                <strong>Discover</strong> the list of APIs available for you at this time with ADCB
                 {{else}}
                 اكتشف قائمة واجهة برمجة التطبيقات API التي يوفرها لك بنك أبوظبي التجاري
                 {{/is}}
@@ -33,78 +33,41 @@ breadcumb2Has: false
         </div>
     </div>
 
-
-    <div class="o-comp c-hero-segment">
-        <!-- start c-comp-content -->
-        <div class="o-comp__content container">
-            <!-- start hero-segment blocks -->
-            <div class="c-hero-segment__wrapper" id="rewards">
-                <div class="c-hero-segment__img -parallax" data-position="center" data-bleed="0"
-                    data-natural-width="530" data-natural-height="390" data-parallax="scroll"
-                    data-image-src="{{images}}/touch-points.jpg">
-                </div>
-                <div class="c-hero-segment__info">
-                    <h3 class="c-hero-segment__title"><sup class="c-hero-segment__sup">
-                            {{#is language "en"}}
-                            SEGMENTS
-                            {{else}}
-                            القطاعات
-                            {{/is}}
-                        </sup>
-
-                        {{#is language "en"}}
-                        TouchPoints APIs
-                        {{else}}
-                        واجهة برمجة التطبيقات API لمكافآت نقاط تاتش بوينتس
-                        {{/is}}
-
-                    </h3>
-                    <div class="c-hero-segment__cta"><a href="touchpoints-api.html" class="o-btn-white">
-                            {{#is language "en"}}
-                            View more
-                            {{else}}
-                            عرض المزيد
-                            {{/is}}
-                        </a>
-                    </div>
+    <div class="container">
+        <div class="image-cta-parall img-right api">
+            <div class="col">
+                <div class="image-cta-parall__circle">
+                    <img class="image-cta-parall__circle__art" src="{{images}}/TouchPoints.png" alt="TouchPoints">
                 </div>
             </div>
-            <!-- end hero-segment blocks -->
-            <!-- start hero-segment blocks -->
-            <div class="c-hero-segment__wrapper" id="events">
-                <div class="c-hero-segment__img -parallax" data-position="center" data-bleed="0"
-                    data-natural-width="530" data-natural-height="390" data-parallax="scroll"
-                    data-image-src="{{images}}/virtual-account.jpg">
-                </div>
-                <div class="c-hero-segment__info">
-                    <h3 class="c-hero-segment__title"><sup class="c-hero-segment__sup">
-                            {{#is language "en"}}
-                            SEGMENTS
-                            {{else}}
-                            القطاعات
-                            {{/is}}
-                        </sup>
-                        {{#is language "en"}}
-                        Virtual Account APIs
-                        {{else}}
-                        واجهات برمجة التطبيقات APIs المخصصة للحسابات الافتراضية
-                        {{/is}}
-                    </h3>
-                    <div class="c-hero-segment__cta"><a href="virtual-account-apis.html" class="o-btn-white">
-                            {{#is language "en"}}
-                            View more
-                            {{else}}
-                            عرض المزيد
-                            {{/is}}
-                        </a>
-                    </div>
+            <div class="col">
+                <div class="image-cta-parall__copy-wrap">
+                    <div class="page-title-small color-red">SEGMENTS</div>
+                    <h2 class="image-cta-parall__title"><strong>TouchPoints</strong> APIs</h2>
+                    <a href="#" class="o-btn-medium-red"> 
+				        View more
+                    </a>
                 </div>
             </div>
-            <!-- end hero-segment blocks -->
         </div>
-        <!-- end c-comp-content -->
+        <div class="image-cta-parall img-left">
+            <div class="col">
+                <div class="image-cta-parall__circle">
+                    <img class="image-cta-parall__circle__art" src="{{images}}/Virtual-Account.png" alt="TouchPoints">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image-cta-parall__copy-wrap">
+                    <div class="page-title-small color-red">SEGMENTS</div>
+                    <h2 class="image-cta-parall__title"><strong>Virtual Account</strong>  APIs</h2>
+                    <a href="#" class="o-btn-medium-red"> 
+				        View more
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- end hero segment-->
+
 
 </div>
 

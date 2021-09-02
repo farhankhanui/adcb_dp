@@ -7,16 +7,14 @@ breadcumb1Link:
 breadcumb1Text-ar: نبذة
 breadcumb2Has: false
 ---
-
 {{> breadcrumb}}
-
-
-
 <div id="introduction"></div>
 <div class="hero-section">
+    <div class="hero-section__about-circle"></div>
     <div class="hero-section__content-wrapper">
         <div class="hero-section__title-wrapper">
-            <div class="container container--small">
+
+            <div class="container ">
                 <h2 class="hero-section__title">
                     <sup class="hero-section__category color-red">
                         {{#is language "en"}}
@@ -26,8 +24,7 @@ breadcumb2Has: false
                         {{/is}}
                     </sup>
                     {{#is language "en"}}
-                    This is just the beginning of us working together to make stronger digital connections with our
-                    customers
+                    This is just the <strong>beginning</strong> of us working together to make stronger digital connections with our customers
                     {{else}}
                     هذه أول خطوة في رحلة عملنا معاً نحو انشاء علاقات رقمية أقوى مع عملائنا.
                     {{/is}}
@@ -43,13 +40,14 @@ breadcumb2Has: false
 <div id="feature"></div>
 <div class="site-content ">
     <div class="container about">
+        <div class="about__circle"></div>
         <div class="o-comp c-product-feature ">
             <!-- start comp-content -->
             <div class="o-comp__content">
                 <!-- start comp-title -->
                 <div class="o-comp__title">
                     {{#is language "en"}}
-                    <h2>Welcome to the new API Marketplace by ADCB</h2>
+                    <h2><strong>Welcome</strong> to the new API Marketplace by ADCB</h2>
                     <p class="o-comp__title_desc o-comp__title_desc c-hero-segment__title_desc">
                         Let’s collectively create the future of digital in your industry. Our APIs allow you to
                         collaborate with us and connect with a wider base of retail and wholesale customers.
@@ -239,7 +237,7 @@ breadcumb2Has: false
                 <!-- start comp-title -->
                 <div class="o-comp__title">
                     <h2> {{#is language "en"}}
-                        Our Partners
+                        Our <strong>Partners</strong>
                         {{else}}
                         شركاؤنا
                         {{/is}}</h2>
@@ -249,29 +247,20 @@ breadcumb2Has: false
                 <div class="c-our-partners__list">
                     <div class="c-our-partners__item">
                         <a href="#">
-                            <img src="{{images}}/p1.jpg">
+                            <img src="{{images}}/cleartrip.png">
                         </a>
                     </div>
                     <div class="c-our-partners__item">
                         <a href="#">
-                            <img src="{{images}}/p2.jpg">
+                            <img src="{{images}}/farah-experiences.png">
                         </a>
                     </div>
                     <div class="c-our-partners__item">
                         <a href="#">
-                            <img src="{{images}}/p3.jpg">
+                            <img src="{{images}}/zomato.png">    
                         </a>
                     </div>
-                    <div class="c-our-partners__item">
-                        <a href="#">
-                            <img src="{{images}}/p4.jpg">
-                        </a>
-                    </div>
-                    <div class="c-our-partners__item">
-                        <a href="#">
-                            <img src="{{images}}/p5.jpg">
-                        </a>
-                    </div>
+  
                 </div>
                 <!-- end our partners -->
             </div>
