@@ -1,67 +1,70 @@
 <style>
+  .bumper {
+    text-align: center;
+    padding: 128px 16px;
+    background-color: #efefef;
+  }
 
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
 
-.bumper {
-  text-align: center;
-  padding: 128px 16px;
-  background-color: #efefef;
-}
+  .counter-container {
+    margin-top: 5vh;
+    margin-bottom: -30vh;
+  }
 
+  @media (min-width: 1921px) {
+    .counter-container {
+      margin-top: 10vh;
+      margin-bottom: -20vh;
+    }
+  }
 
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.partner-ship {
-  margin-bottom: -100px;
-}
-.space-holder {
-  position: relative;
-  width: 100%;
-}
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+    transition: all .5s ease;
+  }
 
-.sticky {
-  position: sticky;
-   top: 20%;
-  height: 400px; 
-  width: 100%;
-  overflow: hidden;
-}
+  .cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-.horizontal {
-  position: absolute;
-  height: 100%;
-  will-change: transform;
-  transition: all .5s ease;
-}
+  .sample-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: #111f30;
+    margin-right: 75px;
+    flex-shrink: 0;
+  }
 
-.cards {
-  position: relative;
-  height: 100%;
-  padding: 0 0 0 150px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .c-product-feature__item {
+    width: 350px;
+    max-width: none;
+    margin-bottom: 0;
+  }
 
-.sample-card {
-  position: relative;
-  height: 300px;
-  width: 500px;
-  background-color: #111f30;
-  margin-right: 75px;
-  flex-shrink: 0;
-}
-
-.c-product-feature__item {
-  width: 350px; 
-  max-width: none;  
-  margin-bottom: 0; 
-}
-
-.site-wrap {
-  overflow: initial;
-}
-
-
+  .site-wrap {
+    overflow: initial;
+  }
 </style>
 
 
@@ -70,94 +73,90 @@
     <div class="sticky">
       <div class="container">
         <div class="horizontal">
-        <section role="feed" class="cards features">
-        
+          <section role="feed" class="cards features">
 
-          <div class="c-product-feature__list">
+
+            <div class="c-product-feature__list">
               <div class="c-product-feature__item">
-                  <!-- start personal-card component -->
-                  <div class="c-feature-card">
-                      <div class="c-feature-card__promotional-value">
-                          One
-                      </div>
-                      <div class="c-feature-card__details">
-                          <p class="c-feature-card__summary ">
-                              of the largest banks in the UAE
-                          </p>
-                      </div>
+                <!-- start personal-card component -->
+                <div class="c-feature-card">
+                  <div class="c-feature-card__promotional-value">
+                    One
                   </div>
-                  <!-- end personal-card component -->
+                  <div class="c-feature-card__details">
+                    <p class="c-feature-card__summary ">
+                      of the largest banks in the UAE
+                    </p>
+                  </div>
+                </div>
+                <!-- end personal-card component -->
               </div>
               <div class="c-product-feature__item">
-                  <!-- start personal-card component -->
+                <!-- start personal-card component -->
 
-                  <div class="c-feature-card">
-                      <div class="c-feature-card__promotional-value">
-                          <span class="-left">Over</span> 1M
-                      </div>
-                      <div class="c-feature-card__details">
-                          <p class="c-feature-card__summary ">
-                              Customers
-                          </p>
-                      </div>
+                <div class="c-feature-card">
+                  <div class="c-feature-card__promotional-value">
+                    <span class="-left">Over</span> 1M
                   </div>
-                  <!-- end personal-card component -->
+                  <div class="c-feature-card__details">
+                    <p class="c-feature-card__summary ">
+                      Customers
+                    </p>
+                  </div>
+                </div>
+                <!-- end personal-card component -->
               </div>
               <div class="c-product-feature__item">
-                  <!-- start personal-card component -->
-                  <div class="c-feature-card">
-                      <div class="c-feature-card__promotional-value">
+                <!-- start personal-card component -->
+                <div class="c-feature-card">
+                  <div class="c-feature-card__promotional-value">
 
-                          500+
-                      </div>
-                      <div class="c-feature-card__details">
-                          <p class="c-feature-card__summary ">
-
-                              Merchant tie-ups
-                          </p>
-                      </div>
+                    500+
                   </div>
-                  <!-- end personal-card component -->
+                  <div class="c-feature-card__details">
+                    <p class="c-feature-card__summary ">
+
+                      Merchant tie-ups
+                    </p>
+                  </div>
+                </div>
+                <!-- end personal-card component -->
               </div>
               <div class="c-product-feature__item">
-                  <!-- start personal-card component -->
-                  <div class="c-feature-card">
-                      <div class="c-feature-card__promotional-value">
-                          170M
-                      </div>
-                      <div class="c-feature-card__details">
-                          <p class="c-feature-card__summary ">
-                              Reward points awarded annually
-                          </p>
-                      </div>
+                <!-- start personal-card component -->
+                <div class="c-feature-card">
+                  <div class="c-feature-card__promotional-value">
+                    170M
                   </div>
-                  <!-- end personal-card component -->
+                  <div class="c-feature-card__details">
+                    <p class="c-feature-card__summary ">
+                      Reward points awarded annually
+                    </p>
+                  </div>
+                </div>
+                <!-- end personal-card component -->
               </div>
               <div class="c-product-feature__item">
-                  <!-- start personal-card component -->
-                  <div class="c-feature-card">
-                      <div class="c-feature-card__promotional-value">
-                          <span class="-left">Over</span> 320K
-                      </div>
-                      <div class="c-feature-card__details">
-                          <p class="c-feature-card__summary ">
-
-                              opened Virtual Accounts
-                          </p>
-                      </div>
+                <!-- start personal-card component -->
+                <div class="c-feature-card">
+                  <div class="c-feature-card__promotional-value">
+                    <span class="-left">Over</span> 320K
                   </div>
-                  <!-- end personal-card component -->
-              </div>
-          </div>
+                  <div class="c-feature-card__details">
+                    <p class="c-feature-card__summary ">
 
-          
-        </section>
-      </div>
+                      opened Virtual Accounts
+                    </p>
+                  </div>
+                </div>
+                <!-- end personal-card component -->
+              </div>
+            </div>
+
+
+          </section>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
