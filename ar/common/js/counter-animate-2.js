@@ -11,10 +11,10 @@ $(document).ready(function () {
     function parallax() {
       elem.css({
         "-webkit-transform":
-          "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
+          "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
         "-ms-transform":
-          "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
-        transform: "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
+          "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
+        transform: "translate3d(" + 100 * (windowTop / limit) + "px,0,0)",
       });
     }
 

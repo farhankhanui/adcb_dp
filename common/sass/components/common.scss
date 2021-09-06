@@ -2369,6 +2369,9 @@
             left: -280px;
             top: 85px;
             display: flex;
+            /*rtl:ignore*/
+            direction: ltr;
+            /*rtl:ignore*/
             @media (max-width: 768px) {
                 position: static;
                 width: 100%;

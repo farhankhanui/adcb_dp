@@ -35,7 +35,7 @@ $(function () {
       var currentwidth = $(".partners").width();
       var newpositions = substractindex * currentwidth;
       $(this).animate({
-        left: newpositions,
+        left: -newpositions,
       });
     });
   };
@@ -60,10 +60,10 @@ $(function () {
     var currentindex = $(this).index();
     var currentposition = currentindex * currentwidth;
     $(this).css({
-      left: currentposition,
+      left: -currentposition,
       width: currentwidth - 40,
     });
-    $(this).attr("data-position", currentposition);
+    $(this).attr("data-position", -currentposition);
     $(".tab-content").css("height", currentheight + 20);
   });
 
