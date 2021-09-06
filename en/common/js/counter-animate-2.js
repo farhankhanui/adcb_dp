@@ -1,7 +1,30 @@
 $(document).ready(function () {
   // let mql = window.matchMedia("(min-width: 1025px)");
 
-  if( window.matchMedia('(min-width:1025px)').matches)  {
+  if (mql.matches) {
+    var elem = $("#item1");
+    var elemOffset = elem.offset().top;
+
+    var windowTop;
+    var limit = 100;
+
+    function parallax() {
+      elem.css({
+        "-webkit-transform":
+          "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
+        "-ms-transform":
+          "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
+        transform: "translate3d(-" + 100 * (windowTop / limit) + "px,0,0)",
+      });
+    }
+
+    $(window).on("scroll", function () {
+      windowTop = $(window).scrollTop();
+      window.requestAnimationFrame(parallax);
+    });
+  }
+
+  /* if (mql.matches) {
     var rightItem = document.getElementById("item1");
     console.clear();
     console.log("test");
@@ -29,5 +52,5 @@ $(document).ready(function () {
       console.log(window.pageYOffset);
       rightItem.style.transform = "translate(-" + window.pageYOffset + "px)";
     });
-  }
+  } */
 });
