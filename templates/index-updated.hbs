@@ -20,17 +20,44 @@ footer-space-no: true
     </div>
     <div class="spotlight__caption">
         <p class="small-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+            {{#is language "en"}}
             API Marketplace by ADCB
+            {{else}}
+            واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+            {{/is}}
         </p>
         <h1 class="lead-heading">
-            <span data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-offset="-500">Connect.</span>
-            <span data-aos="fade-up" data-aos-delay="200" data-aos-duration="400"
-                data-aos-offset="-500">Collaborate.</span>
-            <span data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-offset="-500">Create.</span>
+            <span data-aos="fade-up" data-aos-delay="150" data-aos-duration="400" data-aos-offset="-500">
+                {{#is language "en"}}
+                Connect.
+                {{else}}
+                تواصُل.
+                {{/is}}
+            </span>
+            <span data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" data-aos-offset="-500">
+                {{#is language "en"}}
+                Collaborate.
+                {{else}}
+                تَعاون.
+                {{/is}}
+            </span>
+            <span data-aos="fade-up" data-aos-delay="250" data-aos-duration="400" data-aos-offset="-500">
+
+                {{#is language "en"}}
+                Create.
+                {{else}}
+                ابداع.
+                {{/is}}
+            </span>
         </h1>
-        <a href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html" class="o-btn-medium-red" data-aos-anchor-placement="top-center" data-aos-offset="-500"
-            data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+        <a href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html" class="o-btn-medium-red"
+            data-aos-anchor-placement="top-center" data-aos-offset="-500" data-aos="fade-up" data-aos-delay="300"
+            data-aos-duration="500">
+            {{#is language "en"}}
             Get Started
+            {{else}}
+            ابدأ
+            {{/is}}
         </a>
     </div>
 
@@ -44,8 +71,13 @@ footer-space-no: true
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4 class="lead-heading" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">There is power
-                    in <strong>Partnerships</strong></h4>
+                <h4 class="lead-heading" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                    {{#is language "en"}}
+                    There is power in <strong>Partnerships</strong>
+                    {{else}}
+                    الشراكات الناجحة موطن قوّتنا
+                    {{/is}}
+                </h4>
             </div>
         </div>
         <div class="partner-ship__text-wrapper">
@@ -76,137 +108,6 @@ footer-space-no: true
 
 {{> scroll-counter-2 }}
 
-{{!-- <section class="features">
-
-    <div class="c-product-feature__list">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="c-product-feature__item">
-                    <!-- start personal-card component -->
-                    <div class="c-feature-card">
-                        <div class="c-feature-card__promotional-value">
-                            {{#is language "en"}}
-                            One
-                            {{else}}
-                            واحد
-                            {{/is}}
-                        </div>
-                        <div class="c-feature-card__details">
-                            <p class="c-feature-card__summary ">
-                                {{#is language "en"}}
-                                of the largest banks in the UAE
-                                {{else}}
-                                من أكبر البنوك في دولة الإمارات
-                                {{/is}}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- end personal-card component -->
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="c-product-feature__item">
-                    <!-- start personal-card component -->
-
-                    <div class="c-feature-card">
-                        <div class="c-feature-card__promotional-value">
-                            {{#is language "en"}}
-                            <span class="-left">Over</span> 1M
-                            {{else}}
-                            <span class="-left">أكثر من </span> مليون
-                            {{/is}}
-                        </div>
-                        <div class="c-feature-card__details">
-                            <p class="c-feature-card__summary ">
-                                {{#is language "en"}}
-                                Customers
-                                {{else}}
-                                عميل
-                                {{/is}}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- end personal-card component -->
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="c-product-feature__item">
-                    <!-- start personal-card component -->
-                    <div class="c-feature-card">
-                        <div class="c-feature-card__promotional-value">
-
-                            {{#is language "en"}}
-                            500+
-                            {{else}}
-                            <span class="-left">أكثر من </span> 500
-                            {{/is}}
-                        </div>
-                        <div class="c-feature-card__details">
-                            <p class="c-feature-card__summary ">
-
-                                {{#is language "en"}}
-                                Merchant tie-ups
-                                {{else}}
-                                شراكة تجارية
-                                {{/is}}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- end personal-card component -->
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="c-product-feature__item">
-                    <!-- start personal-card component -->
-                    <div class="c-feature-card">
-                        <div class="c-feature-card__promotional-value">
-                            {{#is language "en"}}
-                            170M
-                            {{else}}
-                            320 الف عميل
-                            {{/is}}
-                        </div>
-                        <div class="c-feature-card__details">
-                            <p class="c-feature-card__summary ">
-                                {{#is language "en"}}
-                                Reward points awarded annually
-                                {{else}}
-                                قاموا بفتح حسابات افتراضية
-                                {{/is}}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- end personal-card component -->
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="c-product-feature__item">
-                    <!-- start personal-card component -->
-                    <div class="c-feature-card">
-                        <div class="c-feature-card__promotional-value">
-                            {{#is language "en"}}
-                            <span class="-left">Over</span> 320K
-                            {{else}}
-                            170 مليون
-                            {{/is}}
-                        </div>
-                        <div class="c-feature-card__details">
-                            <p class="c-feature-card__summary ">
-
-                                {{#is language "en"}}
-                                opened Virtual Accounts
-                                {{else}}
-                                نقطة مكافآت تُمنح سنوياً
-                                {{/is}}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- end personal-card component -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
 
 <section class="work-togeather">
     <div class="work-togeather__circle" data-aos="fade-left" data-aos-duration="600">
@@ -219,18 +120,37 @@ footer-space-no: true
         <div class="row">
             <div class="work-togeather__text-wrap">
                 <p class="page-title-small">
+                    {{#is language "en"}}
                     It’s all about you
+                    {{else}}
+                    صممت خدماتنا لتناسب احتياجاتك
+                    {{/is}}
                 </p>
                 <h3 data-aos="fade-up" data-aos-offset="-100" data-aos-delay="100" data-aos-duration="600">
+                    {{#is language "en"}}
                     Here’s how we can <br> work <strong>together</strong>
+                    {{else}}
+                    معاً ننجز العمل
+                    {{/is}}
                 </h3>
+
                 <p data-aos="fade-up" data-aos-offset="-100" data-aos-delay="150" data-aos-duration="600">
+                    {{#is language "en"}}
                     Collaboration is the best way to support each other in building best in class digital products that
                     create meaningful experiences for our mutual customers.
+                    {{else}}
+                    التعاون هو الطريقة الأمثل لندعم بعضنا البعض في تقديم أفضل المنتجات الرقمية التي تمنح تجارب مفيدة
+                    ومجدية لعملائنا المشتَركين.
+                    {{/is}}
+
                 </p>
-                <a href="about.html" class="o-btn-medium-red" data-aos="fade-up" data-aos-offset="-200" data-aos-delay="200"
-                    data-aos-duration="600">
+                <a href="about.html" class="o-btn-medium-red" data-aos="fade-up" data-aos-offset="-200"
+                    data-aos-delay="200" data-aos-duration="600">
+                    {{#is language "en"}}
                     Learn more
+                    {{else}}
+                    اعرف المزيد
+                    {{/is}}
                 </a>
             </div>
         </div>
@@ -245,15 +165,31 @@ footer-space-no: true
         <div class="row">
             <div class="col">
                 <h3 class="lead-heading" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                    {{#is language "en"}}
                     Be a part of the <strong>change</strong>
-                    </h1>
+                    {{else}}
+                    كن جزءاً من التغيير
+                    {{/is}}
+                </h3>
             </div>
         </div>
     </div>
     <div class='partners'>
         <div class='tab-buttons'>
-            <span data-Id='partner' data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">PARTNER</span>
-            <span data-Id='individual' data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">INDIVIDUAL</span>
+            <span data-Id='partner' data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
+                {{#is language "en"}}
+                PARTNER
+                {{else}}
+                شريك
+                {{/is}}
+            </span>
+            <span data-Id='individual' data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                {{#is language "en"}}
+                INDIVIDUAL
+                {{else}}
+                شخصي
+                {{/is}}
+            </span>
         </div>
         <div class='tab-content' data-aos="fade-left" data-aos-duration="600">
             <div id='partner'>
@@ -269,12 +205,30 @@ footer-space-no: true
                             stroke-width="36.864" stroke="#000"
                             d="M732.383 802.676c-0.017-49.67-30.209-94.281-76.132-112.493l-184.32-73.544v-100.8c0 0 60.104-20.16 60.104-120.96 33.097 0 33.097-80.64 0-80.64 0-9.878 33.939-85.156 20.035-141.12-20.035-80.64-240.417-80.64-260.452 0-100.174-20.16-40.070 127.613-40.070 141.12-33.097 0-33.097 80.64 0 80.64 0 100.8 60.104 120.96 60.104 120.96v100.8l-184.681 73.987c-45.741 18.312-75.763 62.836-75.772 112.372v116.041h681.183v-116.364z" />
                     </svg>
-                    <h3 class="partner__title">Let’s team up to design the future of banking in the region</h3>
+                    <h3 class="partner__title">
+                        {{#is language "en"}}
+                        Let’s team up to design the future of banking in the region
+                        {{else}}
+                        لنتعاون معاً لنرسم ملامح مستقبل الخدمات المصرفية في المنطقة
+                        {{/is}}
+                    </h3>
                     <p class="partner__des">
-                        To partner with us and to get full access to our catalogue of APIs, sandbox testing environment,
-                        technical documentation, and reliable support, you’ll need to sign up and register first.
+                        {{#is language "en"}}
+                        To partner with us and to get full access to our catalogue of APIs, sandbox testing
+                        environment, technical documentation, and reliable support, you’ll need to sign up and
+                        register first.
+                        {{else}}
+                        بادر إلى التسجيل لتحصل على فرصة الوصول والاستفادة الكاملة من كتيّب واجهة برمجة التطبيقات API
+                        وبيئة الاختبار المعزولة sandbox والوثائق التقنية وخدمات دعم موثوقة يمكنك الاعتماد عليها.
+                        {{/is}}
                     </p>
-                    <a href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html" class="partner__link">Register now</a>
+                    <a href="https://sandbox.adcb.com/pages/apimarketplace/sign-up-now.html" class="partner__link">
+                        {{#is language "en"}}
+                        Register now
+                        {{else}}
+                        سجّل الان
+                        {{/is}}
+                    </a>
 
                 </div>
             </div>
@@ -305,14 +259,32 @@ footer-space-no: true
                     </svg>
 
 
-                    <h3 class="partner__title">We appreciate your interest in registering for our API Marketplace.</h3>
+                    <h3 class="partner__title">
+                        {{#is language "en"}}
+                        We appreciate your interest in registering for our API Marketplace
+                        {{else}}
+                        نقدر اهتمامك بالتسجيل في واجهة برمجة التطبيقات API Marketplace من بنك أبوظبي التجاري
+                        {{/is}}
+                    </h3>
                     <p class="partner__des">
-                        Unfortunately, we are unable to accommodate your request at this time. We are currently in the
-                        process of making our API Marketplace accessible to everyone. Contact us to get a conversation
-                        started with our team and explore possibilities.
+                        {{#is language "en"}}
+                        Unfortunately, we are unable to accommodate your request at this time. We are currently in
+                        the process of making
+                        our API Marketplace accessible to everyone. Contact us to get a conversation started with
+                        our team and explore possibilities.
+                        {{else}}
+                        للأسف، لا يمكننا تلبية طلبك في الوقت الحالي. نعمل حالياً على جعل واجهة برمجة التطبيقات API
+                        Marketplace متاحاً للجميع. اتصل بنا وتحدّث مع أحد موظفينا للحصول على المزيد من المعلومات.
+                        {{/is}}
                     </p>
-                    <a href="support.html" class="partner__link">Contact us</a>
-                </div>  
+                    <a href="support.html" class="partner__link">
+                        {{#is language "en"}}
+                        Contact us
+                        {{else}}
+                        اتصل بنا
+                        {{/is}}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -327,22 +299,39 @@ footer-space-no: true
     <div class="container">
         <div class="row">
             <div class="creative__text-wrap">
-                <p class="page-title-small" data-aos="fade-up" data-aos-delay="100" data-aos-offset="50"  data-aos-duration="600">
+                <p class="page-title-small" data-aos="fade-up" data-aos-delay="100" data-aos-offset="50"
+                    data-aos-duration="600">
+                    {{#is language "en"}}
                     New beginnings are exciting!
+                    {{else}}
+                    البدايات الجديدة مدهشة حقاً!
+                    {{/is}}
                 </p>
                 <h3 data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="600">
+                    {{#is language "en"}}
                     Introducing more ways to be
                     <strong>creative and collaborative</strong>
+                    {{else}}
+                    نبتكر وسائل جديدة أكثر فعالية لنكون أكثر أبداعاً وانتاجية
+                    {{/is}}
                 </h3>
                 <p data-aos="fade-up" data-aos-offset="50" data-aos-delay="150" data-aos-duration="600">
-                    Stay tuned. We are in the process of creating a hub for introducing more APIs, creating a supportive
-                    community, and continuing to work collectively to develop mutually beneficial products and services
-                    for our common customers.
-
+                    {{#is language "en"}}
+                    Stay tuned. We are in the process of creating a hub for introducing more APIs, creating a
+                    supportive community, and continuing to work collectively to develop mutually beneficial
+                    products and services for our common customers.
+                    {{else}}
+                    ابقوا دائماً على اطلاع، فنحن بصدد إنشاء مركز متخصّص لتقديم المزيد من واجهات برمجة التطبيقات API،
+                    وتأسيس بيئة داعمة، ومواصلة العمل الجماعي لتطوير منتجات وخدمات مفيدة لعملائنا المشتركين.
+                    {{/is}}
                 </p>
-                <a href="api-catalogue.html" class="o-btn-medium-red" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
-                    data-aos-duration="600">
+                <a href="api-catalogue.html" class="o-btn-medium-red" data-aos="fade-up" data-aos-offset="50"
+                    data-aos-delay="200" data-aos-duration="600">
+                    {{#is language "en"}}
                     API Catalogue
+                    {{else}}
+                    كتيّب واجهة برمجة التطبيقات API
+                    {{/is}}
                 </a>
             </div>
         </div>

@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  let mql = window.matchMedia("(min-width: 1025px)");
+  // let mql = window.matchMedia("(min-width: 1025px)");
 
-  if (mql.matches) {
+  if( window.matchMedia('(min-width:1025px)').matches)  {
     var rightItem = document.getElementById("item1");
     console.clear();
     console.log("test");
