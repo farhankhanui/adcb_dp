@@ -1,6 +1,3 @@
-
-
-// Language switcher script copied form ADCB live site
 var autoHeight = false;
 if ($(window).width() <= 768) {
     autoHeight = true

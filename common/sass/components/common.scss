@@ -1351,9 +1351,9 @@
         }
     }
     
-    .c-product-feature {
+    .c-product-feature__list {
         .o-comp {
-            &__title {}
+            
             &__title_desc {
                 color: #fff;
                 opacity: 0.7;
@@ -1378,7 +1378,7 @@
             }
             &__promotional-value {
                 @media (max-width: 768px) {
-                    font-size: 70px #{"/*rtl:55px*/"};
+                    font-size: 70px #{"/*rtl:50px*/"};
                 }
                 span.-left {
                     right: 110%;
@@ -2390,6 +2390,8 @@
                 border-color: #d8d8d8;
                 margin-left: 9px;
                 margin-right: 9px;
+                outline: none;
+                box-shadow: none;  
                 &:hover {
                     padding: 10px 20px !important;
                     border-radius: 30px;
@@ -2518,6 +2520,7 @@
         }
         &__copy-wrap {
             text-align: left;
+            max-width: 400px;
             .page-title-small {
                 text-align: left;
             }
