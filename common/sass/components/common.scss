@@ -318,6 +318,10 @@
         strong {
             font-weight: bold;
         }
+        &--no-gap {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     &__img-wrapper {
         &.align-center {
